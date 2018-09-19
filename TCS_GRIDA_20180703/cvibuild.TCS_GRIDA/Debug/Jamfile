@@ -1,0 +1,58 @@
+CCFLAGS = -g ;
+TargetFileVersion = "1.0.0.0" ;
+TargetProdVersion = "1.0.0.0" ;
+HDRS = 	"c:\\program files\\national instruments\\cvi2013\\include"
+	"C:\\Program Files\\National Instruments\\Shared\\CVI\\include"
+	"C:\\ProgramData\\National Instruments\\CVI2013\\include"
+	"C:\\ProgramData\\National Instruments\\CVI\\include"
+	"c:\\program files\\national instruments\\cvi2013\\include\\ansi"
+	"c:\\program files\\national instruments\\cvi2013\\include\\clang\\2.9"
+	"C:\\Program Files\\IVI Foundation\\IVI\\Include"
+	"C:\\Program Files\\IVI Foundation\\VISA\\winnt\\include"
+	"c:\\program files\\national instruments\\cvi2013\\sdk\\include"
+	"d:\\TCS_GRIDA_20180703"
+	"c:\\program files\\national instruments\\cvi2013\\toolslib\\activex\\word"
+	"c:\\program files\\national instruments\\cvi2013\\toolslib\\activex\\excel"
+	"c:\\program files\\national instruments\\cvi2013\\toolslib\\custctrl"
+	"c:\\program files\\national instruments\\cvi2013\\toolslib\\custctrl\\custsupp"
+	"c:\\program files\\national instruments\\cvi2013\\toolslib\\cvirtsup"
+	"c:\\program files\\national instruments\\cvi2013\\toolslib\\datasock"
+	"c:\\program files\\national instruments\\cvi2013\\toolslib\\daqUtil"
+	"c:\\program files\\national instruments\\cvi2013\\toolslib\\printing"
+	"c:\\program files\\national instruments\\cvi2013\\toolslib\\toolbox"
+	"c:\\program files\\national instruments\\cvi2013\\toolslib\\reportgen"
+	"c:\\program files\\national instruments\\cvi2013\\toolslib\\localui"
+	"c:\\program files\\national instruments\\cvi2013\\instr"
+	"C:\\Program Files\\National Instruments\\Shared\\CVI\\toolslib\\custctrl"
+	"C:\\Program Files\\National Instruments\\Shared\\CVI\\toolslib\\custctrl\\custsupp"
+	"C:\\Program Files\\National Instruments\\Shared\\CVI\\instr"
+	"C:\\ProgramData\\National Instruments\\CVI2013\\instr"
+	"c:\\Program Files\\National Instruments\\CVI2013\\bin"
+	"c:\\ProgramData\\National Instruments\\CVI2013\\bin"
+	"c:\\Program Files\\National Instruments\\Shared\\CVI\\Bin"
+	"d:\\TCS_GRIDA_20180703\\cal_lib"
+	;
+include Jamfile_instr ;
+Object "d:\\TCS_GRIDA_20180703\\cvibuild.TCS_GRIDA\\Debug\\cal_sub.obj" : "d:\\TCS_GRIDA_20180703\\cal_sub.c" ;
+PrjObjects += "d:\\TCS_GRIDA_20180703\\cvibuild.TCS_GRIDA\\Debug\\cal_sub.obj" ;
+Object "d:\\TCS_GRIDA_20180703\\cvibuild.TCS_GRIDA\\Debug\\cpabtsub.obj" : "d:\\TCS_GRIDA_20180703\\cal_lib\\cpabtsub.c" ;
+PrjObjects += "d:\\TCS_GRIDA_20180703\\cvibuild.TCS_GRIDA\\Debug\\cpabtsub.obj" ;
+Object "d:\\TCS_GRIDA_20180703\\cvibuild.TCS_GRIDA\\Debug\\cvi_util.obj" : "d:\\TCS_GRIDA_20180703\\cvi_util.c" ;
+PrjObjects += "d:\\TCS_GRIDA_20180703\\cvibuild.TCS_GRIDA\\Debug\\cvi_util.obj" ;
+Object "d:\\TCS_GRIDA_20180703\\cvibuild.TCS_GRIDA\\Debug\\initiation.obj" : "d:\\TCS_GRIDA_20180703\\initiation.c" ;
+PrjObjects += "d:\\TCS_GRIDA_20180703\\cvibuild.TCS_GRIDA\\Debug\\initiation.obj" ;
+Object "d:\\TCS_GRIDA_20180703\\cvibuild.TCS_GRIDA\\Debug\\jpl_sub.obj" : "d:\\TCS_GRIDA_20180703\\cal_lib\\jpl_sub.c" ;
+PrjObjects += "d:\\TCS_GRIDA_20180703\\cvibuild.TCS_GRIDA\\Debug\\jpl_sub.obj" ;
+Object "d:\\TCS_GRIDA_20180703\\cvibuild.TCS_GRIDA\\Debug\\mathsub.obj" : "d:\\TCS_GRIDA_20180703\\cal_lib\\mathsub.c" ;
+PrjObjects += "d:\\TCS_GRIDA_20180703\\cvibuild.TCS_GRIDA\\Debug\\mathsub.obj" ;
+Object "d:\\TCS_GRIDA_20180703\\cvibuild.TCS_GRIDA\\Debug\\st4s_lib.obj" : "d:\\TCS_GRIDA_20180703\\st4s_lib.c" ;
+PrjObjects += "d:\\TCS_GRIDA_20180703\\cvibuild.TCS_GRIDA\\Debug\\st4s_lib.obj" ;
+Object "d:\\TCS_GRIDA_20180703\\cvibuild.TCS_GRIDA\\Debug\\tel_sub.obj" : "d:\\TCS_GRIDA_20180703\\tel_sub.c" ;
+PrjObjects += "d:\\TCS_GRIDA_20180703\\cvibuild.TCS_GRIDA\\Debug\\tel_sub.obj" ;
+Object "d:\\TCS_GRIDA_20180703\\cvibuild.TCS_GRIDA\\Debug\\tel_sub2.obj" : "d:\\TCS_GRIDA_20180703\\tel_sub2.c" ;
+PrjObjects += "d:\\TCS_GRIDA_20180703\\cvibuild.TCS_GRIDA\\Debug\\tel_sub2.obj" ;
+Object resources.res : resources.in.rc ;
+MainFromObjects "TCS_GRIDA.exe" : $(PrjObjects) $(InstrObjects) ;
+Depends "TCS_GRIDA.exe" : link_options.txt ;
+Depends "TCS_GRIDA.exe" : resources.res ;
+Depends all : "TCS_GRIDA.exe" ;

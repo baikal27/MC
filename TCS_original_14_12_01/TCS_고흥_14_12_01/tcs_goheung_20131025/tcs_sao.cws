@@ -1,0 +1,424 @@
+[Workspace Header]
+Version = 850
+Pathname = "/d/소백산망원경/tcs_sao_20100216/tcs_sao.cws"
+CVI Dir = "/c/program files/national instruments/cvi85"
+CVI Shared Dir = "/C/Program Files/National Instruments/Shared/CVI"
+CVI Pub Local Dir = "/C/Documents and Settings/All Users/Application Data/National Instruments/CVI85"
+CVI Pub Global Dir = "/C/Documents and Settings/All Users/Application Data/National Instruments/CVI"
+IVI Standard Root Dir = "/C/Program Files/IVI"
+VXIplug&play Framework Dir = "/c/vxipnp/winnt"
+Number of Projects = 1
+Active Project = 1
+Project 0001 = "tcs_sao.prj"
+Drag Bar Left = 265
+Window Top = 119
+Window Left = 14
+Window Bottom = 859
+Window Right = 1215
+Maximized = False
+Maximized Children = True
+Max Number Of Errors = 20
+Track Include File Dependencies = True
+Prompt For Missing Includes = True
+Stop On First Error File = False
+Bring Up Err Win For Warnings = True
+Show Build Dialog = False
+Save Changes Before Running = "Always"
+Hide Windows = False
+Global Hot Key = False
+Break At First Statement = False
+Sort Type = "File Name"
+Number of Opened Files = 8
+Window Confinement Region Enabled = True
+MainColumnWidth = 246
+FileDateColumnWidth = 70
+FileSizeColumnWidth = 70
+StatusColumnWidth = 70
+
+[Project Header 0001]
+Version = 850
+Don't Update DistKit = False
+Platform Code = 4
+Build Configuration = "Debug"
+Warn User If Debugging Release = 1
+Batch Build Release = False
+Batch Build Debug = False
+Force Rebuild = False
+
+[File 0001]
+Path = "/d/소백산망원경/tcs_sao_20100216/cal_sub.c"
+File Type = "CSource"
+Disk Date = 3378759520
+In Projects = "1,"
+Window Top = 30
+Window Left = 6
+Source Window State = "1,260,260,260,70,71,71,0,0,0,0,0,0,0,0,0,800,0,809,23,315,690,1,0,"
+Line Tags = "544,"
+
+[File 0002]
+Path = "/d/소백산망원경/tcs_sao_20100216/sky_scan.c"
+File Type = "CSource"
+Disk Date = 3366324308
+In Projects = "1,"
+Window Top = 117
+Window Left = 54
+Source Window State = "1,22,22,22,11,15,15,0,0,0,0,0,0,0,0,0,0,0,21,81,427,690,0,0,"
+Line Tags = "184,"
+
+[File 0003]
+Path = "/d/소백산망원경/tcs_sao_20100216/tcs.c"
+File Type = "CSource"
+Disk Date = 3382410949
+In Projects = "1,"
+Window Top = 71
+Window Left = 30
+Window Z-Order = 4
+Source Window State = "1,345,345,345,34,38,38,0,0,80,0,0,0,0,0,25,918,0,938,72,427,690,1,0,"
+Line Tags = "856,"
+
+[File 0004]
+Path = "/d/소백산망원경/tcs_sao_20100216/TCS.uir"
+File Type = "User Interface Resource"
+Disk Date = 3380577005
+In Projects = "1,"
+Window Top = 48
+Window Left = 18
+Window Height = 299
+Window Width = 690
+Window Z-Order = 5
+
+[File 0005]
+Path = "/d/소백산망원경/tcs_sao_20100216/scan_sub.c"
+File Type = "CSource"
+Disk Date = 3368556298
+In Projects = "1,"
+Window Top = 30
+Window Left = 6
+Source Window State = "1,284,284,284,122,123,123,0,0,0,0,0,0,0,0,0,289,0,301,24,427,690,1,0,"
+Line Tags = "49,398,"
+
+[File 0006]
+Path = "/d/소백산망원경/tcs_sao_20100216/tcs_ajin.c"
+File Type = "CSource"
+Disk Date = 3380683662
+In Projects = "1,"
+Window Top = 48
+Window Left = 18
+Window Z-Order = 6
+Source Window State = "1,266,266,266,16,23,23,0,3,80,0,57,0,0,0,25,62,0,266,16,427,690,1,0,"
+
+[File 0007]
+Path = "/d/소백산망원경/tcs_sao_20100216/initiation.c"
+File Type = "CSource"
+Disk Date = 3380853603
+In Projects = "1,"
+Window Top = 62
+Window Left = 22
+Window Z-Order = 8
+Source Window State = "1,26,26,26,4,12,12,0,0,59,0,0,0,0,0,20,97,0,140,57,349,522,1,0,"
+
+[File 0008]
+Path = "/d/소백산망원경/tcs_sao_20100216/tcs_ajin.uir"
+File Type = "User Interface Resource"
+Disk Date = 3382305962
+In Projects = "1,"
+Window Top = 30
+Window Left = 6
+Window Height = 427
+Window Width = 690
+Window Z-Order = 7
+
+[File 0009]
+Path = "/d/소백산망원경/tcs_sao_20100216/tel_sub.c"
+File Type = "CSource"
+Disk Date = 3382306294
+In Projects = "1,"
+Window Top = 140
+Window Left = 66
+Source Window State = "1,228,238,228,0,32,0,0,0,80,0,611,0,0,0,25,459,0,648,71,427,690,1,0,"
+
+[File 0010]
+Path = "/c/lib/cal_lib/ASTROMETRY.lib"
+File Type = "Library"
+Disk Date = 3368416281
+In Projects = "1,"
+
+[File 0011]
+Path = "/d/소백산망원경/tcs_sao_20100216/AXA.h"
+File Type = "Include"
+Disk Date = 3326060978
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0012]
+Path = "/d/소백산망원경/tcs_sao_20100216/AXD.h"
+File Type = "Include"
+Disk Date = 3319595178
+In Projects = "1,"
+Window Top = 48
+Window Left = 18
+Source Window State = "1,50,50,50,23,41,41,0,3,0,0,0,0,0,0,0,32,0,50,23,395,690,1,0,"
+
+[File 0013]
+Path = "/d/소백산망원경/tcs_sao_20100216/AXDev.h"
+File Type = "Include"
+Disk Date = 3315351516
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0014]
+Path = "/d/소백산망원경/tcs_sao_20100216/AXHD.h"
+File Type = "Include"
+Disk Date = 3315351516
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0015]
+Path = "/d/소백산망원경/tcs_sao_20100216/AXHS.h"
+File Type = "Include"
+Disk Date = 3319595178
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0016]
+Path = "/d/소백산망원경/tcs_sao_20100216/AXL.h"
+File Type = "Include"
+Disk Date = 3344197210
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0017]
+Path = "/d/소백산망원경/tcs_sao_20100216/AXLNet.lib"
+File Type = "Library"
+Disk Date = 3322798930
+In Projects = "1,"
+
+[File 0018]
+Path = "/d/소백산망원경/tcs_sao_20100216/AXM.h"
+File Type = "Include"
+Disk Date = 3319595178
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0019]
+Path = "/d/소백산망원경/tcs_sao_20100216/cal_sub.h"
+File Type = "Include"
+Disk Date = 3368420434
+In Projects = "1,"
+Window Top = 186
+Window Left = 90
+Source Window State = "1,19,21,19,0,0,0,0,0,0,0,0,0,0,0,0,0,0,19,0,427,690,1,0,"
+
+[File 0020]
+Path = "/d/소백산망원경/tcs_sao_20100216/catalog.c"
+File Type = "CSource"
+Disk Date = 3368416434
+In Projects = "1,"
+Window Top = 30
+Window Left = 6
+Source Window State = "1,358,359,358,0,0,0,0,0,0,0,0,0,0,0,0,341,0,357,2,427,690,1,0,"
+
+[File 0021]
+Path = "/d/소백산망원경/tcs_sao_20100216/catalog.h"
+File Type = "Include"
+Disk Date = 3364870748
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0022]
+Path = "/d/소백산망원경/tcs_sao_20100216/catalog.uir"
+File Type = "User Interface Resource"
+Disk Date = 3364870748
+In Projects = "1,"
+
+[File 0023]
+Path = "/c/lib/cal_lib/cpabtsub.h"
+File Type = "Include"
+Disk Date = 3369196177
+In Projects = "1,"
+Window Top = 163
+Window Left = 78
+Source Window State = "1,101,101,101,32,33,32,0,0,0,0,0,0,0,0,0,70,0,104,0,427,690,1,0,"
+
+[File 0024]
+Path = "/c/lib/tcs_lib/cvi_util.c"
+File Type = "CSource"
+Disk Date = 3336595846
+In Projects = "1,"
+Window Top = 94
+Window Left = 42
+Source Window State = "1,10,11,10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,12,0,427,690,1,0,"
+
+[File 0025]
+Path = "/d/소백산망원경/tcs_sao_20100216/ec_test.c"
+File Type = "CSource"
+Disk Date = 3366316072
+In Projects = "1,"
+Window Top = 32
+Window Left = 6
+Source Window State = "1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,349,522,1,0,"
+
+[File 0026]
+Path = "/d/소백산망원경/tcs_sao_20100216/ec_test.uir"
+File Type = "User Interface Resource"
+Disk Date = 3366584090
+In Projects = "1,"
+
+[File 0027]
+Path = "/d/소백산망원경/tcs_sao_20100216/guide_sub.c"
+File Type = "CSource"
+Disk Date = 3380235577
+In Projects = "1,"
+Window Top = 32
+Window Left = 6
+Source Window State = "1,801,801,801,51,59,51,0,0,0,0,0,0,0,0,0,798,0,801,66,349,522,1,0,"
+
+[File 0028]
+Path = "/d/소백산망원경/tcs_sao_20100216/guide_sub.uir"
+File Type = "User Interface Resource"
+Disk Date = 3380235579
+In Projects = "1,"
+Window Top = 48
+Window Left = 18
+Window Height = 427
+Window Width = 690
+
+[File 0029]
+Path = "/d/소백산망원경/tcs_sao_20100216/gv_tel.h"
+File Type = "Include"
+Disk Date = 3380666511
+In Projects = "1,"
+Window Top = 140
+Window Left = 66
+Source Window State = "1,57,60,57,0,0,0,0,0,0,0,0,0,0,0,0,22,0,54,0,427,690,1,0,"
+
+[File 0030]
+Path = "/d/소백산망원경/tcs_sao_20100216/initiation.h"
+File Type = "Include"
+Disk Date = 3380667588
+In Projects = "1,"
+Window Top = 48
+Window Left = 18
+Source Window State = "1,5,6,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,0,427,690,1,0,"
+
+[File 0031]
+Path = "/d/소백산망원경/tcs_sao_20100216/sky_scan.uir"
+File Type = "User Interface Resource"
+Disk Date = 3366336268
+In Projects = "1,"
+Window Top = 94
+Window Left = 42
+Window Height = 427
+Window Width = 690
+
+[File 0032]
+Path = "/d/소백산망원경/tcs_sao_20100216/st4s_lib.c"
+File Type = "CSource"
+Disk Date = 3380689050
+In Projects = "1,"
+Window Top = 71
+Window Left = 30
+Source Window State = "1,326,326,326,4,24,24,0,0,80,0,0,0,0,0,25,108,0,137,105,427,690,1,0,"
+
+[File 0033]
+Path = "/d/소백산망원경/tcs_sao_20100216/st4s_lib.h"
+File Type = "Include"
+Disk Date = 3380678411
+In Projects = "1,"
+Window Top = 25
+Window Left = 6
+Source Window State = "1,36,37,36,0,0,0,0,0,0,0,0,0,0,0,0,17,0,46,18,395,690,1,0,"
+
+[File 0034]
+Path = "/d/소백산망원경/tcs_sao_20100216/tel_sub.h"
+File Type = "Include"
+Disk Date = 3380751815
+In Projects = "1,"
+Window Top = 71
+Window Left = 30
+Source Window State = "1,9,9,9,0,60,0,0,0,0,0,0,0,0,0,0,0,0,23,2,427,690,1,0,"
+
+[File 0035]
+Path = "/d/소백산망원경/tcs_sao_20100216/TheSky_server.c"
+File Type = "CSource"
+Disk Date = 3369174810
+In Projects = "1,"
+Window Top = 30
+Window Left = 6
+Source Window State = "1,101,101,101,27,31,31,0,0,0,0,0,0,0,0,0,0,0,106,23,427,690,1,0,"
+
+[File 0036]
+Path = "/d/소백산망원경/tcs_sao_20100216/type_def.h"
+File Type = "Include"
+Disk Date = 3364866472
+In Projects = "1,"
+Window Top = 25
+Window Left = 6
+Source Window State = "1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,427,690,1,0,"
+
+[File 0037]
+Path = "/d/소백산망원경/tcs_sao_20100216/dome_control.uir"
+File Type = "User Interface Resource"
+Disk Date = 3314736762
+In Projects = "1,"
+Window Top = 25
+Window Left = 6
+Window Height = 363
+Window Width = 690
+Window Z-Order = 2
+
+[File 0038]
+Path = "/d/소백산망원경/tcs_sao_20100216/dome_control.c"
+File Type = "CSource"
+Disk Date = 3382411646
+In Projects = "1,"
+Window Top = 48
+Window Left = 18
+Window Z-Order = 1
+Source Window State = "1,111,112,111,0,0,0,0,0,111,0,0,0,0,0,34,192,0,198,2,363,690,1,0,"
+
+[File 0039]
+Path = "/d/소백산망원경/tcs_sao_20100216/dome_sub.c"
+File Type = "CSource"
+Disk Date = 3382411156
+In Projects = "1,"
+Window Top = 71
+Window Left = 30
+Window Z-Order = 3
+Source Window State = "1,230,230,230,4,21,21,0,0,80,0,0,0,0,0,21,220,0,245,89,363,690,1,0,"
+
+[Build Options 0001]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Execution Trace = "Disabled"
+Debugging Level = "Standard"
+Break On Library Errors = True
+Break On First Chance Exceptions = False
+Execution Target Address = "Local desktop computer"
+Execution Target Port = 0
+Execution Target Type = 0
+
+[SCC Options 0001]
+Use global settings = True
+SCC Provider = ""
+SCC Project = ""
+Local Path = ""
+Auxiliary Path = ""
+Perform Same Action For .h File As For .uir File = "Ask"
+Perform Same Action For .cds File As For .prj File = "Ask"
+Username = ""
+Comment = ""
+Use Default Username = False
+Use Default Comment = False
+Suppress CVI Error Messages = False
+Always show confirmation dialog = True
+
+[DLL Debugging Support 0001]
+External Process Path = ""
+
+[DLLs Used By Executable 0001]
+DLL 0001 = "/D/소백산망원경/tcs_sao_20100216/AXLNet.dll"
+
+[Command Line Args 0001]
+Command Line Args = ""
+

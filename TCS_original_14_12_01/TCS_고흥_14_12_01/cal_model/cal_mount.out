@@ -1,0 +1,25 @@
+ 0    -45.622  104.9      37.857  107.0
+ 1    -32.325  -17.0      44.009   43.7
+ 2    -24.648  -37.9      46.345  -73.0
+ 3    -15.297  -32.0      48.225  -11.0
+ 4     -3.561   12.9      49.296  -71.8
+ 5      7.991  -89.2      49.062  -13.8
+ 6     17.110  -42.1      47.961   24.4
+ 7     31.590   43.7      44.320  159.0
+ 8     53.056   68.3      33.069 -239.6
+ 9     62.078  -11.6      25.405   75.1
+r.m.s residual azi:    55.121 alt:   106.355
+
+ -----  Result of Mount Model calaulation -----
+ 1  10683.651 +/-     61.362  azimuth zero point
+ 2  91682.508 +/-    150.341  altitutde zero point
+ 3     90.105 +/-      0.077  azimuth scale  (arcsec/counts)
+ 4     90.750 +/-      0.174  altitude scale (arcsec/counts)
+ 5  -2026.177 +/-    252.542  vertical axis error E_W (arcsec)
+ 6    497.214 +/-     61.715  vertical axix error N_S (arcsec)
+--------- New Mount Model ------------
+ 0   -118.56946  -1010.27414  zero point       
+ 1      0.01110      0.01102  scale            
+ 2     22.48695     22.32699  vertical axis E-W
+ 3     -5.51819     -5.47894  vertical axis N-S
+ --- Output file is cal_model.out ----

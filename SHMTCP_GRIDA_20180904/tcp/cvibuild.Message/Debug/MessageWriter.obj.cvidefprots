@@ -1,0 +1,16 @@
+[main]
+Class="Function"
+Prototype="int main(int argc, char **argv);"
+
+[PanelCallback]
+Class="Function"
+Prototype="int PanelCallback(int panel, int event, void *callbackData, int eventData1, int eventData2);"
+
+[SendCallback]
+Class="Function"
+Prototype="int SendCallback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[TCPCallback]
+Class="Function"
+Prototype="int TCPCallback(unsigned int handle, int event, int error, void *callbackData);"
+

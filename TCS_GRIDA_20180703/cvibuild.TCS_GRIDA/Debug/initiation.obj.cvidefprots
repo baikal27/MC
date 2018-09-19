@@ -1,0 +1,72 @@
+[main]
+Class="Function"
+Prototype="int main(int argc, char **argv);"
+
+[Panel_Proc]
+Class="Function"
+Prototype="int Panel_Proc(int panel, int event, void *callbackData, int eventData1, int eventData2);"
+
+[APPLY]
+Class="Function"
+Prototype="int APPLY(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[CB_TIMER]
+Class="Function"
+Prototype="int CB_TIMER(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[THREAD_INIT]
+Class="Function"
+Prototype="int THREAD_INIT(void *data);"
+
+[check_init]
+Class="Function"
+Prototype="int check_init();"
+
+[display_message]
+Class="Function"
+Prototype="void display_message(char *buff);"
+
+[display_message2]
+Class="Function"
+Prototype="void display_message2(char *buff);"
+
+[goto_target]
+Class="Function"
+Prototype="int goto_target();"
+
+[SLEW_AND_TRACK]
+Class="Function"
+Prototype="int SLEW_AND_TRACK(struct H_M_S ra_2000, struct D_M_S dec_2000);"
+
+[start_inittcs]
+Class="Function"
+Prototype="int start_inittcs();"
+
+[start_parking]
+Class="Function"
+Prototype="int start_parking();"
+
+[THREAD_PARKING]
+Class="Function"
+Prototype="int THREAD_PARKING(void *data);"
+
+[detect_module]
+Class="Function"
+Prototype="int detect_module();"
+
+[set_axis_para]
+Class="Function"
+Prototype="int set_axis_para(long laxis);"
+
+[read_input_files]
+Class="Function"
+Prototype="int read_input_files();"
+
+[read_nodeno]
+Class="Function"
+Prototype="int read_nodeno();"
+
+[STOP_TELESCOPE]
+Class="Function"
+Prototype="int STOP_TELESCOPE();"
+

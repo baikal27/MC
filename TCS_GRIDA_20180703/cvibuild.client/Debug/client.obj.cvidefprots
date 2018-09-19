@@ -1,0 +1,20 @@
+[main]
+Class="Function"
+Prototype="int main(int argc, char **argv);"
+
+[TransmitCB]
+Class="Function"
+Prototype="int TransmitCB(int panelHandle, int controlID, int event, void *callbackData, int eventData1, int eventData2);"
+
+[ClientTCPCB]
+Class="Function"
+Prototype="int ClientTCPCB(unsigned int handle, int event, int error, void *callbackData);"
+
+[ClearScreenCB]
+Class="Function"
+Prototype="int ClearScreenCB(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[MainPanelCB]
+Class="Function"
+Prototype="int MainPanelCB(int panel, int event, void *callbackData, int eventData1, int eventData2);"
+

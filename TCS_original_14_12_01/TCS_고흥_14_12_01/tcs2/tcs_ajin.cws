@@ -1,0 +1,406 @@
+[Workspace Header]
+Version = 850
+Pathname = "/d/tcs_ajin_new/tcs_ajin.cws"
+CVI Dir = "/c/program files/national instruments/cvi85"
+CVI Shared Dir = "/C/Program Files/National Instruments/Shared/CVI"
+CVI Pub Local Dir = "/C/Documents and Settings/All Users/Application Data/National Instruments/CVI85"
+CVI Pub Global Dir = "/C/Documents and Settings/All Users/Application Data/National Instruments/CVI"
+IVI Standard Root Dir = "/C/Program Files/IVI"
+VXIplug&play Framework Dir = "/c/vxipnp/winnt"
+Number of Projects = 1
+Active Project = 1
+Project 0001 = "tcs_ajin.prj"
+Project 0001 Folder Include Files Collapsed = True
+Project 0001 Folder Source Files Collapsed = True
+Project 0001 Folder Lib Collapsed = True
+Drag Bar Left = 265
+Window Top = 129
+Window Left = 189
+Window Bottom = 883
+Window Right = 1313
+Maximized = False
+Maximized Children = True
+Max Number Of Errors = 20
+Track Include File Dependencies = True
+Prompt For Missing Includes = True
+Stop On First Error File = False
+Bring Up Err Win For Warnings = True
+Show Build Dialog = False
+Save Changes Before Running = "Always"
+Hide Windows = False
+Global Hot Key = False
+Break At First Statement = False
+Sort Type = "File Name"
+Number of Opened Files = 9
+Window Confinement Region Enabled = True
+MainColumnWidth = 246
+FileDateColumnWidth = 70
+FileSizeColumnWidth = 70
+StatusColumnWidth = 70
+
+[Project Header 0001]
+Version = 850
+Don't Update DistKit = False
+Platform Code = 4
+Build Configuration = "Release"
+Warn User If Debugging Release = 1
+Batch Build Release = False
+Batch Build Debug = False
+Force Rebuild = False
+
+[File 0001]
+Path = "/d/tcs_ajin_new/tcs.c"
+File Type = "CSource"
+Disk Date = 3366784928
+In Projects = "1,"
+Window Top = 30
+Window Left = 6
+Window Z-Order = 4
+Source Window State = "1,687,687,687,11,31,31,0,0,108,0,144,0,0,0,31,677,0,697,22,427,690,1,0,"
+
+[File 0002]
+Path = "/d/tcs_ajin_new/TCS.uir"
+File Type = "User Interface Resource"
+Disk Date = 3366776361
+In Projects = "1,"
+Window Top = 30
+Window Left = 6
+Window Height = 427
+Window Width = 690
+Window Z-Order = 5
+
+[File 0003]
+Path = "/d/tcs_ajin_new/tcs_ajin.c"
+File Type = "CSource"
+Disk Date = 3366578621
+In Projects = "1,"
+Window Top = 30
+Window Left = 6
+Window Z-Order = 8
+Source Window State = "1,209,209,209,19,49,19,0,0,108,0,0,0,0,0,31,190,0,209,49,427,690,1,0,"
+
+[File 0004]
+Path = "/d/tcs_ajin_new/tcs_ajin.uir"
+File Type = "User Interface Resource"
+Disk Date = 3366579229
+In Projects = "1,"
+Window Top = 30
+Window Left = 6
+Window Height = 427
+Window Width = 690
+Window Z-Order = 7
+
+[File 0005]
+Path = "/d/tcs_ajin_new/st4s_lib.c"
+File Type = "CSource"
+Disk Date = 3366760892
+In Projects = "1,"
+Window Top = 30
+Window Left = 6
+Window Z-Order = 9
+Source Window State = "1,409,410,409,0,0,0,0,0,108,0,0,0,0,0,31,382,0,409,44,427,690,1,0,"
+
+[File 0006]
+Path = "/d/tcs_ajin_new/cal_sub.c"
+File Type = "CSource"
+Disk Date = 3363137336
+In Projects = "1,"
+Window Top = 163
+Window Left = 78
+Window Z-Order = 6
+Source Window State = "1,482,482,482,7,21,21,0,3,108,0,0,0,0,0,31,464,0,482,7,427,690,1,0,"
+
+[File 0007]
+Path = "/d/tcs_ajin_new/guide_sub.c"
+File Type = "CSource"
+Disk Date = 3366836832
+In Projects = "1,"
+Window Top = 30
+Window Left = 6
+Window Z-Order = 1
+Source Window State = "1,745,773,773,101,94,94,0,0,137,0,0,0,0,0,50,745,0,749,105,427,690,1,0,"
+
+[File 0008]
+Path = "/d/tcs_ajin_new/guide_sub.uir"
+File Type = "User Interface Resource"
+Disk Date = 3366836830
+In Projects = "1,"
+Window Top = 30
+Window Left = 6
+Window Height = 427
+Window Width = 690
+Window Z-Order = 2
+
+[File 0009]
+Path = "/d/tcs_ajin_new/tel_sub.c"
+File Type = "CSource"
+Disk Date = 3366752951
+In Projects = "1,"
+Window Top = 30
+Window Left = 6
+Window Z-Order = 3
+Source Window State = "1,456,456,456,4,20,20,0,3,108,0,0,0,0,0,31,461,0,456,4,427,690,1,0,"
+
+[File 0010]
+Path = "/d/tcs_ajin_new/ANLNet.lib"
+File Type = "Library"
+Disk Date = 3322799104
+In Projects = "1,"
+
+[File 0011]
+Path = "/c/lib/cal_lib/ASTROMETRY.lib"
+File Type = "Library"
+Disk Date = 3329425536
+In Projects = "1,"
+
+[File 0012]
+Path = "/d/tcs_ajin_new/AXA.h"
+File Type = "Include"
+Disk Date = 3326060978
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0013]
+Path = "/d/tcs_ajin_new/AXD.h"
+File Type = "Include"
+Disk Date = 3319595178
+In Projects = "1,"
+Window Top = 163
+Window Left = 78
+Source Window State = "1,287,287,287,23,41,41,0,3,0,0,0,0,0,0,0,302,0,287,23,427,690,1,0,"
+
+[File 0014]
+Path = "/d/tcs_ajin_new/AXDev.h"
+File Type = "Include"
+Disk Date = 3315351516
+In Projects = "1,"
+Window Top = 140
+Window Left = 66
+Source Window State = "1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,427,690,1,0,"
+
+[File 0015]
+Path = "/d/tcs_ajin_new/AXHD.h"
+File Type = "Include"
+Disk Date = 3315351516
+In Projects = "1,"
+Window Top = 186
+Window Left = 90
+Source Window State = "1,725,725,725,84,88,88,0,3,0,0,0,0,0,0,0,701,0,725,84,427,690,1,0,"
+
+[File 0016]
+Path = "/d/tcs_ajin_new/AXHS.h"
+File Type = "Include"
+Disk Date = 3319595178
+In Projects = "1,"
+Window Top = 117
+Window Left = 54
+Source Window State = "1,501,501,501,110,114,114,0,0,0,0,0,0,0,0,0,362,0,370,111,427,690,1,0,"
+
+[File 0017]
+Path = "/d/tcs_ajin_new/AXL.h"
+File Type = "Include"
+Disk Date = 3344197210
+In Projects = "1,"
+Window Top = 25
+Window Left = 6
+Source Window State = "1,58,58,58,23,30,30,0,3,0,0,0,0,0,0,0,17,0,58,23,427,690,1,0,"
+
+[File 0018]
+Path = "/d/tcs_ajin_new/Axl.lib"
+File Type = "Library"
+Disk Date = 3294905160
+In Projects = "1,"
+
+[File 0019]
+Path = "/d/tcs_ajin_new/AXLNet.lib"
+File Type = "Library"
+Disk Date = 3322798930
+In Projects = "1,"
+
+[File 0020]
+Path = "/d/tcs_ajin_new/AXM.h"
+File Type = "Include"
+Disk Date = 3319595178
+In Projects = "1,"
+Window Top = 94
+Window Left = 42
+Source Window State = "1,426,426,426,7,19,7,0,0,0,0,330,0,0,0,0,415,0,426,23,427,690,1,27,"
+
+[File 0021]
+Path = "/d/tcs_ajin_new/catalog.c"
+File Type = "CSource"
+Disk Date = 3366324307
+In Projects = "1,"
+Window Top = 30
+Window Left = 6
+Source Window State = "1,133,149,133,0,35,0,0,0,0,0,0,0,0,0,0,121,0,149,36,427,690,1,0,"
+
+[File 0022]
+Path = "/d/tcs_ajin_new/catalog.h"
+File Type = "Include"
+Disk Date = 3364870746
+In Projects = "1,"
+Window Top = 48
+Window Left = 18
+Source Window State = "1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,427,690,1,0,"
+
+[File 0023]
+Path = "/d/tcs_ajin_new/catalog.uir"
+File Type = "User Interface Resource"
+Disk Date = 3364870746
+In Projects = "1,"
+Window Top = 140
+Window Left = 66
+Window Height = 427
+Window Width = 690
+
+[File 0024]
+Path = "/c/lib/tcs_lib/cvi_util.c"
+File Type = "CSource"
+Disk Date = 3336595846
+In Projects = "1,"
+Window Top = 32
+Window Left = 6
+Source Window State = "1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,31,0,43,59,349,522,1,0,"
+
+[File 0025]
+Path = "/d/tcs_ajin_new/ec_test.c"
+File Type = "CSource"
+Disk Date = 3366316070
+In Projects = "1,"
+Window Top = 140
+Window Left = 66
+Source Window State = "1,294,294,294,11,23,23,0,0,0,0,0,0,0,0,0,287,0,304,48,427,690,1,0,"
+
+[File 0026]
+Path = "/d/tcs_ajin_new/ec_test.uir"
+File Type = "User Interface Resource"
+Disk Date = 3366584088
+In Projects = "1,"
+Window Top = 30
+Window Left = 6
+Window Height = 427
+Window Width = 690
+
+[File 0027]
+Path = "/d/tcs_ajin_new/gv_tel.h"
+File Type = "Include"
+Disk Date = 3364866470
+In Projects = "1,"
+Window Top = 25
+Window Left = 6
+Source Window State = "1,40,41,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,40,0,411,690,1,0,"
+
+[File 0028]
+Path = "/d/tcs_ajin_new/initiation.c"
+File Type = "CSource"
+Disk Date = 3364939467
+In Projects = "1,"
+Window Top = 71
+Window Left = 30
+Source Window State = "1,150,151,150,0,0,0,0,0,0,0,159,0,0,0,0,54,0,152,0,349,522,1,16,"
+
+[File 0029]
+Path = "/d/tcs_ajin_new/initiation.h"
+File Type = "Include"
+Disk Date = 3364445608
+In Projects = "1,"
+Window Top = 71
+Window Left = 30
+Source Window State = "1,2,3,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,29,427,690,1,0,"
+
+[File 0030]
+Path = "/d/tcs_ajin_new/scan_sub.c"
+File Type = "CSource"
+Disk Date = 3362971632
+In Projects = "1,"
+Window Top = 30
+Window Left = 6
+Source Window State = "1,13,13,13,11,19,19,0,0,0,0,0,0,0,0,0,286,0,296,78,427,690,1,0,"
+
+[File 0031]
+Path = "/d/tcs_ajin_new/sky_scan.c"
+File Type = "CSource"
+Disk Date = 3366324308
+In Projects = "1,"
+Window Top = 25
+Window Left = 6
+Source Window State = "1,183,183,183,16,23,23,0,0,0,0,0,0,0,0,0,225,0,244,22,427,690,1,0,"
+
+[File 0032]
+Path = "/d/tcs_ajin_new/sky_scan.uir"
+File Type = "User Interface Resource"
+Disk Date = 3366336267
+In Projects = "1,"
+Window Top = 25
+Window Left = 6
+Window Height = 411
+Window Width = 690
+
+[File 0033]
+Path = "/d/tcs_ajin_new/st4s_lib.h"
+File Type = "Include"
+Disk Date = 3366335253
+In Projects = "1,"
+Window Top = 48
+Window Left = 18
+Source Window State = "1,41,42,41,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9,17,427,690,1,0,"
+
+[File 0034]
+Path = "/d/tcs_ajin_new/tel_sub.h"
+File Type = "Include"
+Disk Date = 3364855415
+In Projects = "1,"
+Window Top = 48
+Window Left = 18
+Source Window State = "1,2,2,2,11,19,19,0,0,0,0,0,0,0,0,0,0,0,2,34,427,690,1,0,"
+
+[File 0035]
+Path = "/d/tcs_ajin_new/type_def.h"
+File Type = "Include"
+Disk Date = 3364866470
+In Projects = "1,"
+Window Top = 163
+Window Left = 78
+Source Window State = "1,66,67,66,0,0,0,0,0,0,0,0,0,0,0,0,38,0,68,0,427,690,1,0,"
+
+[Build Options 0001]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Execution Trace = "Disabled"
+Debugging Level = "Standard"
+Break On Library Errors = True
+Break On First Chance Exceptions = False
+Execution Target Address = "Local desktop computer"
+Execution Target Port = 0
+Execution Target Type = 0
+
+[SCC Options 0001]
+Use global settings = True
+SCC Provider = ""
+SCC Project = ""
+Local Path = ""
+Auxiliary Path = ""
+Perform Same Action For .h File As For .uir File = "Ask"
+Perform Same Action For .cds File As For .prj File = "Ask"
+Username = ""
+Comment = ""
+Use Default Username = False
+Use Default Comment = False
+Suppress CVI Error Messages = False
+Always show confirmation dialog = True
+
+[DLL Debugging Support 0001]
+External Process Path = ""
+
+[DLLs Used By Executable 0001]
+DLL 0001 = "/D/tcs_ajin_new/AXLNet.dll"
+
+[Command Line Args 0001]
+Command Line Args = ""
+
+[Distributions]
+Active Index = 1
+AbsCDSPath 0001 = "/d/tcs_ajin_new/Tcs_ajin.cds"
+RelCDSPath 0001 = "Tcs_ajin.cds"
+

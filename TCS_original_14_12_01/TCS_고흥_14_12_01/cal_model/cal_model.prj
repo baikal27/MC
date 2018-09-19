@@ -1,0 +1,314 @@
+[Project Header]
+Version = 850
+Pathname = "/d/TCS_∞Ì»Ô/cal_model/cal_model.prj"
+CVI Dir = "/c/program files/national instruments/cvi85"
+CVI Shared Dir = "/C/Program Files/National Instruments/Shared/CVI"
+CVI Pub Local Dir = "/C/Documents and Settings/All Users/Application Data/National Instruments/CVI85"
+CVI Pub Global Dir = "/C/Documents and Settings/All Users/Application Data/National Instruments/CVI"
+IVI Standard Root Dir = "/C/Program Files/IVI"
+VXIplug&play Framework Dir = "/c/vxipnp/winnt"
+Number of Files = 6
+Target Type = "Executable"
+Flags = 16
+
+[File 0001]
+File Type = "Library"
+Res Id = 1
+Path Is Rel = False
+Path = "/c/lib/cal_lib/ASTROMETRY.lib"
+Exclude = False
+Project Flags = 0
+Folder = "Not In A Folder"
+
+[File 0002]
+File Type = "CSource"
+Res Id = 2
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "cal_model.c"
+Path = "/d/TCS_∞Ì»Ô/cal_model/cal_model.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+
+[File 0003]
+File Type = "User Interface Resource"
+Res Id = 3
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "cal_model.uir"
+Path = "/d/TCS_∞Ì»Ô/cal_model/cal_model.uir"
+Exclude = False
+Project Flags = 0
+Folder = "User Interface Files"
+
+[File 0004]
+File Type = "CSource"
+Res Id = 4
+Path Is Rel = False
+Path = "/c/lib/cal_lib/cvi_util.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+
+[File 0005]
+File Type = "Include"
+Res Id = 5
+Path Is Rel = False
+Path = "/c/lib/tcs_lib/cvi_util.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+
+[File 0006]
+File Type = "Include"
+Res Id = 6
+Path Is Rel = False
+Path = "/c/lib/cal_lib/type_def.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+
+[Folders]
+Instrument Files Folder Not Added Yet = True
+Folder 0 = "Include Files"
+Folder 1 = "Source Files"
+Folder 2 = "User Interface Files"
+
+[Compiler Options]
+Default Calling Convention = "cdecl"
+Require Prototypes = True
+Require Return Values = True
+Enable Pointer Mismatch Warning = False
+Enable Unreachable Code Warning = True
+Enable Unreferenced Identifiers Warning = False
+Enable Assignment In Conditional Warning = False
+O Option Compatible With 5.0 = False
+Uninitialized Locals Compile Warning = "Conservative"
+
+[Run Options]
+Stack Size = 100000
+Image Base Address = 4194304
+
+[Compiler Defines]
+Compiler Defines = "/DWIN32_LEAN_AND_MEAN"
+
+[Create Executable]
+Executable File_Debug Is Rel = True
+Executable File_Debug Rel To = "Project"
+Executable File_Debug Rel Path = "tcs_30_dbg.exe"
+Executable File_Debug = "/d/TCS_∞Ì»Ô/cal_model/tcs_30_dbg.exe"
+Executable File_Release Is Rel = True
+Executable File_Release Rel To = "Project"
+Executable File_Release Rel Path = "cal_model.exe"
+Executable File_Release = "/d/TCS_∞Ì»Ô/cal_model/cal_model.exe"
+Icon File Is Rel = False
+Icon File = ""
+Application Title = ""
+DLL Exports = "Include File Symbols"
+DLL Import Library Choice = "Gen Lib For Current Mode"
+Use IVI Subdirectories for Import Libraries = False
+Use VXIPNP Subdirectories for Import Libraries = False
+Use Dflt Import Lib Base Name = True
+Where to Copy DLL = "Do not copy"
+Add Type Lib To DLL = False
+Include Type Lib Help Links = False
+Type Lib FP File Is Rel = False
+Type Lib FP File = ""
+Type Lib Guid = ""
+Runtime Support = "Full Runtime Support"
+Instrument Driver Support Only = False
+Embed Project .UIRs = False
+Generate Map File = False
+
+[External Compiler Support]
+UIR Callbacks File Option = 0
+Using LoadExternalModule = False
+Create Project Symbols File = True
+UIR Callbacks Obj File Is Rel = False
+UIR Callbacks Obj File = ""
+Project Symbols H File Is Rel = False
+Project Symbols H File = ""
+Project Symbols Obj File Is Rel = False
+Project Symbols Obj File = ""
+
+[Distribution Kit]
+Distribution Kit GUID = ""
+Installation Directory = "TCS_KASI"
+Installation Destination = 19
+Install Run-Time Engine = True
+Install RTE Privately = False
+Install Instrsup = False
+Install Instrsup Privately = False
+Install CVI_LVRT = False
+Install CVI_LVRT Privately = False
+Install Low-Level Support Driver = True
+Install ActiveX Container = False
+Media Size = 3
+kBytes Reserved on First Disk = 0
+Target Path Is Rel = False
+Target Path = "/c"
+Language = "English"
+Core Group Index = -1
+DLL Group Index = -1
+Project File 0001 Is Rel = False
+Project File 0001 = "/d/OLD_DISK_D/TCS/tcs_30cm/mmodel/TCS.uir"
+Project File 0002 Is Rel = False
+Project File 0002 = "/d/OLD_DISK_D/TCS/tcs_30cm/mmodel/catalog.uir"
+Project File 0003 Is Rel = False
+Project File 0003 = "/d/OLD_DISK_D/TCS/tcs_30cm/mmodel/guide_sub.uir"
+Project File 0004 Is Rel = False
+Project File 0004 = "/d/temp/test/sky_scan.uir"
+Project File 0005 Is Rel = False
+Project File 0005 = "/d/OLD_DISK_D/TCS/tcs_30cm/mmodel/st4stest.uir"
+Project File 0006 Is Rel = False
+Project File 0006 = "/d/OLD_DISK_D/TCS/tcs_30cm/mmodel/tcp_server.uir"
+Project File 0007 Is Rel = False
+Project File 0007 = "/d/OLD_DISK_D/TCS/tcs_30cm/mmodel/dome_control.uir"
+Project File 0008 Is Rel = False
+Project File 0008 = "/d/OLD_DISK_D/TCS/tcs_30cm/mmodel/ec_test.uir"
+Project File 0009 Is Rel = False
+Project File 0009 = "/d/temp/test/tcs_kasi.exe"
+Redistribute DataSocket = 0
+Redistribute NIReports = 0
+Redistribute DDC = 0
+Redistribute CW3DGraph = 0
+Use Custom Script = False
+Run Executable After Setup Group Index = -1
+Run Executable After Setup File Index = -1
+Use Default Program Group Name = True
+Use Default Installation Name = True
+
+[Distribution Kit File Group 001]
+Group Name = "tcs_30"
+Destination Directory = "Application"
+Use Relative Path = False
+Create Shortcuts = 0
+Install Icons = False
+Distribute Multiple Objects = False
+Replace Mode = "Ask"
+Register As ActiveX Servers = False
+File 0001 Is Rel = True
+File 0001 Rel To = "Project"
+File 0001 Rel Path = "dome_control.uir"
+File 0001 = "/d/TCS_∞Ì»Ô/cal_model/dome_control.uir"
+File 0002 Is Rel = True
+File 0002 Rel To = "Project"
+File 0002 Rel Path = "NUTCONST.DAT"
+File 0002 = "/d/TCS_∞Ì»Ô/cal_model/NUTCONST.DAT"
+File 0003 Is Rel = True
+File 0003 Rel To = "Project"
+File 0003 Rel Path = "PARTBSC5.CAT"
+File 0003 = "/d/TCS_∞Ì»Ô/cal_model/PARTBSC5.CAT"
+File 0004 Is Rel = True
+File 0004 Rel To = "Project"
+File 0004 Rel Path = "TCS_MANUAL.hwp"
+File 0004 = "/d/TCS_∞Ì»Ô/cal_model/TCS_MANUAL.hwp"
+File 0005 Is Rel = True
+File 0005 Rel To = "Project"
+File 0005 Rel Path = "ccd_para.inp"
+File 0005 = "/d/TCS_∞Ì»Ô/cal_model/ccd_para.inp"
+File 0006 Is Rel = True
+File 0006 Rel To = "Project"
+File 0006 Rel Path = "guide_sub.uir"
+File 0006 = "/d/TCS_∞Ì»Ô/cal_model/guide_sub.uir"
+File 0007 Is Rel = True
+File 0007 Rel To = "Project"
+File 0007 Rel Path = "init_dome.inp"
+File 0007 = "/d/TCS_∞Ì»Ô/cal_model/init_dome.inp"
+File 0008 Is Rel = True
+File 0008 Rel To = "Project"
+File 0008 Rel Path = "messier.cat"
+File 0008 = "/d/TCS_∞Ì»Ô/cal_model/messier.cat"
+File 0009 Is Rel = True
+File 0009 Rel To = "Project"
+File 0009 Rel Path = "MOUNT.INP"
+File 0009 = "/d/TCS_∞Ì»Ô/cal_model/MOUNT.INP"
+File 0010 Is Rel = True
+File 0010 Rel To = "Project"
+File 0010 Rel Path = "sky_scan.uir"
+File 0010 = "/d/TCS_∞Ì»Ô/cal_model/sky_scan.uir"
+File 0011 Is Rel = True
+File 0011 Rel To = "Project"
+File 0011 Rel Path = "tcp_server.uir"
+File 0011 = "/d/TCS_∞Ì»Ô/cal_model/tcp_server.uir"
+File 0012 Is Rel = True
+File 0012 Rel To = "Project"
+File 0012 Rel Path = "cal_model.exe"
+File 0012 = "/d/TCS_∞Ì»Ô/cal_model/cal_model.exe"
+File 0013 Is Rel = True
+File 0013 Rel To = "Project"
+File 0013 Rel Path = "TeleAPI.DLL"
+File 0013 = "/d/TCS_∞Ì»Ô/cal_model/TeleAPI.DLL"
+File 0014 Is Rel = True
+File 0014 Rel To = "Project"
+File 0014 Rel Path = "catalog.uir"
+File 0014 = "/d/TCS_∞Ì»Ô/cal_model/catalog.uir"
+File 0015 Is Rel = True
+File 0015 Rel To = "Project"
+File 0015 Rel Path = "cmm.uir"
+File 0015 = "/d/TCS_∞Ì»Ô/cal_model/cmm.uir"
+File 0016 Is Rel = True
+File 0016 Rel To = "Project"
+File 0016 Rel Path = "DUT1.INP"
+File 0016 = "/d/TCS_∞Ì»Ô/cal_model/DUT1.INP"
+File 0017 Is Rel = True
+File 0017 Rel To = "Project"
+File 0017 Rel Path = "ec_test.uir"
+File 0017 = "/d/TCS_∞Ì»Ô/cal_model/ec_test.uir"
+File 0018 Is Rel = True
+File 0018 Rel To = "Project"
+File 0018 Rel Path = "init_tel.inp"
+File 0018 = "/d/TCS_∞Ì»Ô/cal_model/init_tel.inp"
+File 0019 Is Rel = True
+File 0019 Rel To = "Project"
+File 0019 Rel Path = "net_sub.uir"
+File 0019 = "/d/TCS_∞Ì»Ô/cal_model/net_sub.uir"
+File 0020 Is Rel = True
+File 0020 Rel To = "Project"
+File 0020 Rel Path = "SITE.INP"
+File 0020 = "/d/TCS_∞Ì»Ô/cal_model/SITE.INP"
+File 0021 Is Rel = True
+File 0021 Rel To = "Project"
+File 0021 Rel Path = "st4stest.uir"
+File 0021 = "/d/TCS_∞Ì»Ô/cal_model/st4stest.uir"
+File 0022 Is Rel = True
+File 0022 Rel To = "Project"
+File 0022 Rel Path = "TCS.uir"
+File 0022 = "/d/TCS_∞Ì»Ô/cal_model/TCS.uir"
+File 0023 Is Rel = True
+File 0023 Rel To = "Project"
+File 0023 Rel Path = "user.cat"
+File 0023 = "/d/TCS_∞Ì»Ô/cal_model/user.cat"
+
+[Distribution Kit Hardware Config]
+Include Hardware Config File = 0
+
+[ActiveX Server Options]
+Specification File Is Rel = False
+Specification File = ""
+Source File Is Rel = False
+Source File = ""
+Include File Is Rel = False
+Include File = ""
+IDL File Is Rel = False
+IDL File = ""
+Register ActiveX Server = False
+
+[Signing Info]
+Sign = False
+Sign Debug Build = False
+Store = ""
+Certificate = ""
+Timestamp URL = ""
+URL = ""
+
+[Manifest Info]
+Embed = False
+
+[tpcSection]
+tpcEnabled = 0
+tpcOverrideEnvironment = 0
+

@@ -1,0 +1,546 @@
+[Workspace Header]
+Version = 1300
+Pathname = "/d/TCS_∞Ì»Ô_14_12_01/TCS_∞Ì»Ô_14_12_01/tcs_goheung_20130225/tcs_goheung.cws"
+CVI Dir = "/c/program files/national instruments/cvi2013"
+CVI Shared Dir = "/C/Program Files/National Instruments/Shared/CVI"
+CVI Pub Local Dir = "/C/ProgramData/National Instruments/CVI2013"
+CVI Pub Global Dir = "/C/ProgramData/National Instruments/CVI"
+IVI Standard Root Dir = "/C/Program Files/IVI Foundation/IVI"
+IVI Standard Root 64-bit Dir = "/C/Program Files/IVI Foundation/IVI"
+VXIplug&play Framework Dir = "/C/Program Files/IVI Foundation/VISA/winnt"
+VXIplug&play Framework 64-bit Dir = "/C/Program Files/IVI Foundation/VISA/win64"
+Number of Projects = 1
+Active Project = 1
+Project 0001 = "tcs_goheung.prj"
+Drag Bar Left = 222
+Window Top = 98
+Window Left = 158
+Window Bottom = 920
+Window Right = 1102
+Maximized = True
+Maximized Children = True
+Max32 Number Of Errors = 20
+Track Include File Dependencies = True
+Prompt For Missing Includes = True
+Stop On First Error File = False
+Bring Up Err Win At Start = True
+Bring Up Err Win For Errors = False
+Save Changes Before Running = "Always"
+Save Changes Before Compiling = "Always"
+Hide Windows = False
+Break At First Statement = False
+Sort Type = "File Name"
+Number of Opened Files = 27
+Window Confinement Region Enabled = True
+MainColumnWidth = 205
+FileDateColumnWidth = 70
+FileSizeColumnWidth = 70
+
+[Project Header 0001]
+Version = 1300
+Don't Update DistKit = False
+Platform Code = 4
+Build Configuration = "Debug"
+Warn User If Debugging Release = 1
+Batch Build Release = False
+Batch Build Debug = False
+
+[File 0001]
+Path = "/d/TCS_∞Ì»Ô_14_12_01/TCS_∞Ì»Ô_14_12_01/tcs2/TCS.uir"
+File Type = "User Interface Resource"
+Disk Date = 3454971060
+In Projects = ""
+Window Top = 32
+Window Left = 6
+Window Height = 319
+Window Width = 771
+Window Z-Order = 2
+
+[File 0002]
+Path = "/d/TCS_∞Ì»Ô_14_12_01/TCS_∞Ì»Ô_14_12_01/tcs1/catalog.uir"
+File Type = "User Interface Resource"
+Disk Date = 3364870740
+In Projects = ""
+Window Top = 32
+Window Left = 6
+Window Height = 271
+Window Width = 468
+Window Z-Order = 27
+
+[File 0003]
+Path = "/d/TCS_∞Ì»Ô_14_12_01/TCS_∞Ì»Ô_14_12_01/tcs_goheung_20130225/tcs.c"
+File Type = "CSource"
+Disk Date = 3444720228
+In Projects = "1,"
+Window Top = 71
+Window Left = 30
+Window Height = -16281
+Window Z-Order = 1
+Source Window State = "1,543,543,543,11,29,29,0,0,237,0,0,0,0,0,52,327,0,358,59,427,690,1,0,"
+Line Tags = "945,"
+
+[File 0004]
+Path = "/d/TCS_∞Ì»Ô_14_12_01/TCS_∞Ì»Ô_14_12_01/tcs_goheung_20130225/tcs_ajin.c"
+File Type = "CSource"
+Disk Date = 3444684704
+In Projects = "1,"
+Window Top = 30
+Window Left = 6
+Window Height = -16281
+Window Z-Order = 9
+Source Window State = "1,5,5,5,103,104,104,0,0,109,0,0,0,0,0,31,0,0,13,27,427,690,1,0,"
+
+[File 0005]
+Path = "/d/TCS_∞Ì»Ô_14_12_01/TCS_∞Ì»Ô_14_12_01/tcs_goheung_20130225/TCS.uir"
+File Type = "User Interface Resource"
+Disk Date = 3444721066
+In Projects = "1,"
+Window Top = 30
+Window Left = 6
+Window Height = 427
+Window Width = 690
+Window Z-Order = 5
+
+[File 0006]
+Path = "/d/TCS_∞Ì»Ô_14_12_01/TCS_∞Ì»Ô_14_12_01/tcs_goheung_20130225/guide_sub.c"
+File Type = "CSource"
+Disk Date = 3444859692
+In Projects = "1,"
+Window Top = 92
+Window Left = 38
+Window Height = -16281
+Window Z-Order = 12
+Source Window State = "1,381,381,381,23,26,23,0,3,81,0,0,0,0,0,25,360,0,381,26,349,522,1,0,"
+Line Tags = "229,474,751,"
+
+[File 0007]
+Path = "/d/TCS_∞Ì»Ô_14_12_01/TCS_∞Ì»Ô_14_12_01/tcs_goheung_20130225/sky_scan.c"
+File Type = "CSource"
+Disk Date = 3444876630
+In Projects = "1,"
+Window Top = 48
+Window Left = 18
+Window Height = -16281
+Window Z-Order = 24
+Source Window State = "1,116,116,116,4,26,26,0,0,109,0,0,0,0,0,31,116,0,129,32,427,690,1,0,"
+Line Tags = "80,117,"
+
+[File 0008]
+Path = "/d/TCS_∞Ì»Ô_14_12_01/TCS_∞Ì»Ô_14_12_01/tcs_goheung_20130225/tcs_ajin.uir"
+File Type = "User Interface Resource"
+Disk Date = 3444634282
+In Projects = "1,"
+Window Top = 32
+Window Left = 6
+Window Height = 323
+Window Width = 522
+Window Z-Order = 6
+
+[File 0009]
+Path = "/d/TCS_∞Ì»Ô_14_12_01/TCS_∞Ì»Ô_14_12_01/tcs_goheung_20130225/tel_sub.c"
+File Type = "CSource"
+Disk Date = 3444792618
+In Projects = "1,"
+Window Top = 92
+Window Left = 38
+Window Height = -16281
+Window Z-Order = 8
+Source Window State = "1,15,15,15,0,74,74,0,0,81,0,0,0,0,0,23,69,0,93,4,323,522,1,0,"
+Line Tags = "666,"
+
+[File 0010]
+Path = "/d/TCS_∞Ì»Ô_14_12_01/TCS_∞Ì»Ô_14_12_01/tcs_goheung_20130225/guide_sub.uir"
+File Type = "User Interface Resource"
+Disk Date = 3444859652
+In Projects = "1,"
+Window Top = 62
+Window Left = 22
+Window Height = 349
+Window Width = 522
+Window Z-Order = 13
+
+[File 0011]
+Path = "/d/TCS_∞Ì»Ô_14_12_01/TCS_∞Ì»Ô_14_12_01/tcs_goheung_20130225/cal_sub.c"
+File Type = "CSource"
+Disk Date = 3444704250
+In Projects = "1,"
+Window Top = 30
+Window Left = 6
+Window Height = -16281
+Window Z-Order = 7
+Source Window State = "1,644,647,647,2,2,2,0,0,109,0,0,0,0,0,31,628,0,646,11,427,690,1,0,"
+
+[File 0012]
+Path = "/d/TCS_∞Ì»Ô_14_12_01/TCS_∞Ì»Ô_14_12_01/tcs_goheung_20130225/st4s_lib.c"
+File Type = "CSource"
+Disk Date = 3444790224
+In Projects = "1,"
+Window Top = 71
+Window Left = 30
+Window Height = -16281
+Window Z-Order = 23
+Source Window State = "1,273,273,273,0,69,0,0,0,109,0,0,0,0,0,31,396,0,411,5,427,690,1,0,"
+
+[File 0013]
+Path = "/d/TCS_∞Ì»Ô_14_12_01/TCS_∞Ì»Ô_14_12_01/tcs_goheung_20130225/catalog.uir"
+File Type = "User Interface Resource"
+Disk Date = 3364870748
+In Projects = "1,"
+Window Top = 32
+Window Left = 6
+Window Height = 323
+Window Width = 522
+Window Z-Order = 14
+
+[File 0014]
+Path = "/d/TCS_∞Ì»Ô_14_12_01/TCS_∞Ì»Ô_14_12_01/tcs_goheung_20130225/dome_control.uir"
+File Type = "User Interface Resource"
+Disk Date = 3314736762
+In Projects = "1,"
+Window Top = 32
+Window Left = 6
+Window Height = 323
+Window Width = 522
+Window Z-Order = 15
+
+[File 0015]
+Path = "/d/TCS_∞Ì»Ô_14_12_01/TCS_∞Ì»Ô_14_12_01/tcs_goheung_20130225/ec_test.uir"
+File Type = "User Interface Resource"
+Disk Date = 3444638632
+In Projects = "1,"
+Window Top = 122
+Window Left = 54
+Window Height = 349
+Window Width = 522
+Window Z-Order = 16
+
+[File 0016]
+Path = "/d/TCS_∞Ì»Ô_14_12_01/TCS_∞Ì»Ô_14_12_01/tcs_goheung_20130225/sky_scan.uir"
+File Type = "User Interface Resource"
+Disk Date = 3444859252
+In Projects = "1,"
+Window Top = 30
+Window Left = 6
+Window Height = 427
+Window Width = 690
+Window Z-Order = 17
+
+[File 0017]
+Path = "/d/TCS_∞Ì»Ô_14_12_01/TCS_∞Ì»Ô_14_12_01/tcs_goheung_20130225/cal_sub.h"
+File Type = "Include"
+Disk Date = 3444199072
+In Projects = "1,"
+Window Top = 32
+Window Left = 6
+Window Z-Order = 18
+Source Window State = "1,0,0,0,0,0,0,0,0,81,0,0,0,0,0,25,0,0,0,7,349,522,1,0,"
+
+[File 0018]
+Path = "/d/TCS_∞Ì»Ô_14_12_01/TCS_∞Ì»Ô_14_12_01/tcs_goheung_20130225/catalog.c"
+File Type = "CSource"
+Disk Date = 3368416434
+In Projects = "1,"
+Window Top = 62
+Window Left = 22
+Window Height = -16281
+Window Z-Order = 22
+Source Window State = "1,124,124,124,16,25,25,0,0,81,0,0,0,0,0,23,127,0,148,14,323,522,1,0,"
+
+[File 0019]
+Path = "/c/lib/cal_lib/cvi_util.c"
+File Type = "CSource"
+Disk Date = 0
+In Projects = "1,"
+Window Top = 32
+Window Left = 6
+Window Height = -16281
+Source Window State = "1,20,20,20,4,22,22,0,0,0,0,0,0,0,0,0,0,0,20,4,349,522,1,0,"
+
+[File 0020]
+Path = "/d/TCS_∞Ì»Ô_14_12_01/TCS_∞Ì»Ô_14_12_01/tcs_goheung_20130225/dome_control.c"
+File Type = "CSource"
+Disk Date = 3440107048
+In Projects = "1,"
+Window Top = 32
+Window Left = 6
+Window Height = -16281
+Window Z-Order = 21
+Source Window State = "1,0,0,0,0,0,0,0,0,81,0,0,0,0,0,23,617,0,631,31,323,522,1,0,"
+
+[File 0021]
+Path = "/d/TCS_∞Ì»Ô_14_12_01/TCS_∞Ì»Ô_14_12_01/tcs_goheung_20130225/dome_sub.c"
+File Type = "CSource"
+Disk Date = 3382411156
+In Projects = "1,"
+Window Top = 62
+Window Left = 22
+Window Height = -16281
+Window Z-Order = 19
+Source Window State = "1,0,0,0,0,0,0,0,0,81,0,0,0,0,0,23,0,0,6,17,323,522,1,0,"
+
+[File 0022]
+Path = "/d/TCS_∞Ì»Ô_14_12_01/TCS_∞Ì»Ô_14_12_01/tcs_goheung_20130225/ec_test.c"
+File Type = "CSource"
+Disk Date = 3444682872
+In Projects = "1,"
+Window Top = 92
+Window Left = 38
+Window Height = -16281
+Window Z-Order = 20
+Source Window State = "1,384,385,384,0,0,0,0,0,81,0,0,0,0,0,25,214,0,214,60,349,522,1,0,"
+
+[File 0023]
+Path = "/d/TCS_∞Ì»Ô_14_12_01/TCS_∞Ì»Ô_14_12_01/tcs_goheung_20130225/initiation.c"
+File Type = "CSource"
+Disk Date = 3444253782
+In Projects = "1,"
+Window Top = 62
+Window Left = 22
+Window Height = -16281
+Window Z-Order = 26
+Source Window State = "1,183,183,183,4,17,17,0,0,81,0,0,0,0,0,23,221,0,249,51,323,522,1,0,"
+
+[File 0024]
+Path = "/d/TCS_∞Ì»Ô_14_12_01/TCS_∞Ì»Ô_14_12_01/tcs_goheung_20130225/scan_sub.c"
+File Type = "CSource"
+Disk Date = 3440107598
+In Projects = "1,"
+Window Top = 92
+Window Left = 38
+Window Height = -16281
+Window Z-Order = 25
+Source Window State = "1,0,0,0,0,0,0,0,0,81,0,0,0,0,0,23,0,0,12,17,323,522,1,0,"
+
+[File 0025]
+Path = "/d/TCS_∞Ì»Ô_14_12_01/TCS_∞Ì»Ô_14_12_01/tcs_goheung_20130225/TheSky_server.c"
+File Type = "CSource"
+Disk Date = 3440107098
+In Projects = "1,"
+Window Top = 122
+Window Left = 54
+Window Height = -16281
+Window Z-Order = 10
+Source Window State = "1,0,0,0,0,0,0,0,0,81,0,0,0,0,0,23,0,0,0,0,323,522,1,0,"
+
+[File 0026]
+Path = "/d/TCS_∞Ì»Ô_14_12_01/TCS_∞Ì»Ô_14_12_01/tcs1/sky_scan.uir"
+File Type = "User Interface Resource"
+Disk Date = 3453080640
+In Projects = ""
+Window Top = 32
+Window Left = 6
+Window Height = 206
+Window Width = 522
+Window Z-Order = 11
+
+[File 0027]
+Path = "/d/TCS_∞Ì»Ô_14_12_01/TCS_∞Ì»Ô_14_12_01/tcs_goheung_20130225/AXDev.h"
+File Type = "Include"
+Disk Date = 3315351516
+In Projects = "1,"
+Window Top = 62
+Window Left = 22
+Window Z-Order = 3
+Source Window State = "1,0,0,0,0,0,0,0,0,144,0,0,0,0,0,36,0,0,0,0,495,901,1,0,"
+
+[File 0028]
+Path = "/d/TCS_∞Ì»Ô_14_12_01/TCS_∞Ì»Ô_14_12_01/tcs_goheung_20130225/AXL.h"
+File Type = "Include"
+Disk Date = 3344197210
+In Projects = "1,"
+Window Top = 32
+Window Left = 6
+Window Z-Order = 4
+Source Window State = "1,0,0,0,0,0,0,0,0,144,0,0,0,0,0,36,99,0,0,0,495,901,1,0,"
+
+[File 0029]
+Path = "/c/lib/cal_lib/ASTROMETRY.lib"
+File Type = "Library"
+Disk Date = 0
+In Projects = "1,"
+
+[File 0030]
+Path = "/d/TCS_∞Ì»Ô_14_12_01/TCS_∞Ì»Ô_14_12_01/tcs_goheung_20130225/AXA.h"
+File Type = "Include"
+Disk Date = 3326060978
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0031]
+Path = "/d/TCS_∞Ì»Ô_14_12_01/TCS_∞Ì»Ô_14_12_01/tcs_goheung_20130225/AXD.h"
+File Type = "Include"
+Disk Date = 3319595178
+In Projects = "1,"
+Window Top = 48
+Window Left = 18
+Source Window State = "1,245,245,245,23,42,42,0,3,0,0,0,0,0,0,0,221,0,245,23,427,690,1,0,"
+
+[File 0032]
+Path = "/d/TCS_∞Ì»Ô_14_12_01/TCS_∞Ì»Ô_14_12_01/tcs_goheung_20130225/AXHD.h"
+File Type = "Include"
+Disk Date = 3315351516
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0033]
+Path = "/d/TCS_∞Ì»Ô_14_12_01/TCS_∞Ì»Ô_14_12_01/tcs_goheung_20130225/AXHS.h"
+File Type = "Include"
+Disk Date = 3319595178
+In Projects = "1,"
+Window Top = 94
+Window Left = 42
+Source Window State = "1,584,584,584,8,18,18,0,3,0,0,0,0,0,0,0,574,0,584,8,347,690,1,0,"
+
+[File 0034]
+Path = "/d/TCS_∞Ì»Ô_14_12_01/TCS_∞Ì»Ô_14_12_01/tcs_goheung_20130225/AXLNet.lib"
+File Type = "Library"
+Disk Date = 3322798930
+In Projects = "1,"
+
+[File 0035]
+Path = "/d/TCS_∞Ì»Ô_14_12_01/TCS_∞Ì»Ô_14_12_01/tcs_goheung_20130225/AXM.h"
+File Type = "Include"
+Disk Date = 3319595178
+In Projects = "1,"
+Window Top = 30
+Window Left = 6
+Source Window State = "1,545,545,545,23,43,43,0,3,0,0,0,0,0,0,0,539,0,545,23,427,690,1,0,"
+
+[File 0036]
+Path = "/d/TCS_∞Ì»Ô_14_12_01/TCS_∞Ì»Ô_14_12_01/tcs_goheung_20130225/catalog.h"
+File Type = "Include"
+Disk Date = 3364870748
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0037]
+Path = "/d/TCS_∞Ì»Ô_14_12_01/TCS_∞Ì»Ô_14_12_01/tcs_goheung_20130225/gv_tel.h"
+File Type = "Include"
+Disk Date = 3444614680
+In Projects = "1,"
+Window Top = 117
+Window Left = 54
+Source Window State = "1,57,57,57,23,38,23,0,0,0,0,0,0,0,0,0,23,0,35,10,347,690,1,0,"
+
+[File 0038]
+Path = "/d/TCS_∞Ì»Ô_14_12_01/TCS_∞Ì»Ô_14_12_01/tcs_goheung_20130225/initiation.h"
+File Type = "Include"
+Disk Date = 3380667588
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0039]
+Path = "/d/TCS_∞Ì»Ô_14_12_01/TCS_∞Ì»Ô_14_12_01/tcs_goheung_20130225/st4s_lib.h"
+File Type = "Include"
+Disk Date = 3444202294
+In Projects = "1,"
+Window Top = 30
+Window Left = 6
+Source Window State = "1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10,1,427,690,1,0,"
+
+[File 0040]
+Path = "/d/TCS_∞Ì»Ô_14_12_01/TCS_∞Ì»Ô_14_12_01/tcs_goheung_20130225/tel_sub.h"
+File Type = "Include"
+Disk Date = 3444164622
+In Projects = "1,"
+Window Top = 30
+Window Left = 6
+Source Window State = "1,5,6,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,0,411,690,1,0,"
+
+[File 0041]
+Path = "/d/TCS_∞Ì»Ô_14_12_01/TCS_∞Ì»Ô_14_12_01/tcs_goheung_20130225/type_def.h"
+File Type = "Include"
+Disk Date = 3440106936
+In Projects = "1,"
+Window Top = 48
+Window Left = 18
+Source Window State = "1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8,38,427,690,1,0,"
+
+[Default Build Config 0001 Debug]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Batch Build = False
+Profile = "Disabled"
+Debugging Level = "Standard"
+Execution Trace = "Disabled"
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+External Process Path = ""
+
+[Default Build Config 0001 Release]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Batch Build = False
+Profile = "Disabled"
+Debugging Level = "Standard"
+Execution Trace = "Disabled"
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+External Process Path = ""
+
+[Default Build Config 0001 Debug64]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Batch Build = False
+Profile = "Disabled"
+Debugging Level = "Standard"
+Execution Trace = "Disabled"
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+External Process Path = ""
+
+[Default Build Config 0001 Release64]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Batch Build = False
+Profile = "Disabled"
+Debugging Level = "Standard"
+Execution Trace = "Disabled"
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+External Process Path = ""
+
+[Build Dependencies 0001]
+Number of Dependencies = 0
+
+[Build Options 0001]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Execution Trace = "Disabled"
+Profile = "Disabled"
+Debugging Level = "Standard"
+Break On Library Errors = True
+Break On First Chance Exceptions = False
+
+[Execution Target 0001]
+Execution Target Address = "Local desktop computer"
+Execution Target Port = 0
+Execution Target Type = 0
+
+[SCC Options 0001]
+Use global settings = True
+SCC Provider = ""
+SCC Project = ""
+Local Path = ""
+Auxiliary Path = ""
+Perform Same Action For .h File As For .uir File = "Ask"
+Perform Same Action For .cds File As For .prj File = "Ask"
+Username = ""
+Comment = ""
+Use Default Username = False
+Use Default Comment = False
+Suppress CVI Error Messages = False
+Always show confirmation dialog = True
+
+[DLL Debugging Support 0001]
+External Process Path = ""
+
+[Command Line Args 0001]
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+

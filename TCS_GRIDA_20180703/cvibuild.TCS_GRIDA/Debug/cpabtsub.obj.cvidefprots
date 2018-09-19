@@ -1,0 +1,180 @@
+[get_alt_azi_psi]
+Class="Function"
+Prototype="void get_alt_azi_psi(double ra_2000, double dec_2000, double jd_ut1, double longi, double lati, int flag, double *az, double *alt, double *psi);"
+
+[get_aposi]
+Class="Function"
+Prototype="void get_aposi(double ra_2000, double dec_2000, double jd_ut1, double longi, double lati, int flag, double *last, double *ap_ha, double *ap_dec, double *ap_alt, double *ap_az);"
+
+[get_apradec]
+Class="Function"
+Prototype="void get_apradec(double ra_2000, double dec_2000, double jd, double *ra_app, double *dec_app);"
+
+[teat_apradec]
+Class="Function"
+Prototype="void teat_apradec(double ra_2000, double dec_2000, double jd, double *ra_app, double *dec_app);"
+
+[equtoecl]
+Class="Function"
+Prototype="void equtoecl(double ra, double dec, double obl, double *lamda, double *beta);"
+
+[ecltoequ]
+Class="Function"
+Prototype="void ecltoequ(double lamda, double beta, double obl, double *ra, double *dec);"
+
+[equtohor]
+Class="Function"
+Prototype="void equtohor(double ra, double dec, double last, double phi, double *az, double *alt);"
+
+[hadec_to_altazi]
+Class="Function"
+Prototype="void hadec_to_altazi(double ha, double dec, double phi, double *alt, double *azi);"
+
+[hortoequ]
+Class="Function"
+Prototype="void hortoequ(double az, double alt, double last, double phi, double *ra, double *dec);"
+
+[altazi_to_hadec]
+Class="Function"
+Prototype="void altazi_to_hadec(double alt, double azi, double phi, double *ha, double *dec);"
+
+[gctotc]
+Class="Function"
+Prototype="void gctotc(double *ra, double *dec, double *dist, double stime, double lat, double h);"
+
+[correct_rv]
+Class="Function"
+Prototype="int correct_rv(double jd, double longi, double lati, double height, double rarad, double decrad, double *jd_bc, double *rv_obs);"
+
+[funha]
+Class="Function"
+Prototype="double funha(double ra, double last);"
+
+[getxo]
+Class="Function"
+Prototype="void getxo(double longi, double lat, double h, double *xo, double *latgc);"
+
+[precess]
+Class="Function"
+Prototype="void precess(double jd, double *x0, double *xt);"
+
+[nutate]
+Class="Function"
+Prototype="void nutate(double jd, double *x0, double *x);"
+
+[aberration]
+Class="Function"
+Prototype="void aberration(double jd, double *RA, double *Decl);"
+
+[anuaber]
+Class="Function"
+Prototype="void anuaber(double jd, double *p);"
+
+[get_earth_vel_apr]
+Class="Function"
+Prototype="void get_earth_vel_apr(double jd, double *v);"
+
+[get_earth_pos_apr]
+Class="Function"
+Prototype="int get_earth_pos_apr(double jd_ut, double *XI, double *YI, double *ZI);"
+
+[get_pi_factor]
+Class="Function"
+Prototype="int get_pi_factor(double jd_ut, double RA, double Dec, double *pi_alp, double *pi_dec);"
+
+[refract]
+Class="Function"
+Prototype="void refract(double *alt);"
+
+[funmobl]
+Class="Function"
+Prototype="double funmobl(double jd);"
+
+[nutconst]
+Class="Function"
+Prototype="void nutconst(double jd, double *delphi, double *deleps, double *eps);"
+
+[SunLonAndEcc]
+Class="Function"
+Prototype="void SunLonAndEcc(double T, double *Lon, double *e);"
+
+[inverse_precess]
+Class="Function"
+Prototype="void inverse_precess(double jd, double *xt, double *x0);"
+
+[inverse_nutate]
+Class="Function"
+Prototype="void inverse_nutate(double jd, double *x, double *x0);"
+
+[get_jd]
+Class="Function"
+Prototype="double get_jd(int year, int month, int day, double rhour);"
+
+[jdtoc]
+Class="Function"
+Prototype="void jdtoc(double jd, int flag, int *year, int *month, int *day, double *rhour);"
+
+[funtdb]
+Class="Function"
+Prototype="double funtdb(double tdt);"
+
+[jdtogmst]
+Class="Function"
+Prototype="double jdtogmst(double jd);"
+
+[jdtogast]
+Class="Function"
+Prototype="double jdtogast(double jd);"
+
+[jdtolast]
+Class="Function"
+Prototype="double jdtolast(double jd, double longi);"
+
+[jdtolmst]
+Class="Function"
+Prototype="double jdtolmst(double jd, double longi);"
+
+[get_jdutc_clock]
+Class="Function"
+Prototype="double get_jdutc_clock();"
+
+[get_jdutc_clock2]
+Class="Function"
+Prototype="double get_jdutc_clock2(double interv_sec);"
+
+[read_computer_time]
+Class="Function"
+Prototype="void read_computer_time(int *year, int *month, int *day, int *hour, int *minute, int *second, int *hsecond);"
+
+[get_planet_position_apr]
+Class="Function"
+Prototype="int get_planet_position_apr(int nbody, double jd_ut, double *ra_2000, double *de_2000, double *disti);"
+
+[adjust_ra]
+Class="Function"
+Prototype="void adjust_ra(double *ra, int ndata);"
+
+[get_stco]
+Class="Function"
+Prototype="void get_stco(double ALPHA0, double DELTA0, double ALPHA, double DELTA, double *XSI, double *ETA);"
+
+[st_to_sp]
+Class="Function"
+Prototype="void st_to_sp(double ALPHA0, double DELTA0, double XSI, double ETA, double *ALPHA, double *DELTA);"
+
+[correct_rv_test]
+Class="Function"
+Prototype="int correct_rv_test(double jd, double longi, double lati, double height, double rarad, double decrad, double *jd_bc, double *rv_1, double *rv_2);"
+
+[getdhms]
+Class="Function"
+Prototype="void getdhms(double rday, int *day, int *hour, double *minute);"
+
+[tdttokst]
+Class="Function"
+Prototype="double tdttokst(double tdt);"
+
+[adeltat]
+Class="Function"
+Prototype="double adeltat(double jd);"
+

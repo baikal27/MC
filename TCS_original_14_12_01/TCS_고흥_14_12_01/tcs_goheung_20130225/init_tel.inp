@@ -1,0 +1,15 @@
+2.0  100 3.0 1.0 3.0 600  R.A. speed for slew (deg/sec) freq_min slew_time f_guide (arcminute), f_set(arcminute), f_init(arcsec)
+1.0  100 3.0 1.0 3.0 600  Dec. speed
+0    10       R.A. counts value of home and initialize point
+0    10       Dec. counts value of home and initialize point
+1 1 1           cw, home ccw, switch status for R.A.
+1 1 1                                           Dec.
+-5.3 5.3        east and west HA limit in hour 
+5000 3000 1000 3000 PARK V2 V3 V4 A2
+5000 3000 1000 3000
+3               servo update sec
+0.01  2.0       MAX_ERROR_RA_ARCSEC,MAX_ERROR_DEC_ARCSEC;
+1               DOME CONTROL : 1 ==> for DOME CONTROL, 0 ==> no dome control
+0               S/W limit
+
+

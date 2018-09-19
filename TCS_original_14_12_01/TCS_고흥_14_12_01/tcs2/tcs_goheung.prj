@@ -1,0 +1,541 @@
+[Project Header]
+Version = 850
+Pathname = "/d/TCS_∞Ì»Ônew/tcs_goheung_20110216/tcs_goheung.prj"
+CVI Dir = "/c/program files/national instruments/cvi85"
+CVI Shared Dir = "/C/Program Files/National Instruments/Shared/CVI"
+CVI Pub Local Dir = "/C/Documents and Settings/All Users/Application Data/National Instruments/CVI85"
+CVI Pub Global Dir = "/C/Documents and Settings/All Users/Application Data/National Instruments/CVI"
+IVI Standard Root Dir = "/C/Program Files/IVI"
+VXIplug&play Framework Dir = "/c/vxipnp/winnt"
+Number of Files = 38
+Target Type = "Executable"
+Flags = 16
+
+[File 0001]
+File Type = "Library"
+Res Id = 1
+Path Is Rel = False
+Path = "/c/lib/cal_lib/ASTROMETRY.lib"
+Exclude = False
+Project Flags = 0
+Folder = "Not In A Folder"
+
+[File 0002]
+File Type = "Include"
+Res Id = 2
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "AXA.h"
+Path = "/d/TCS_∞Ì»Ônew/tcs_goheung_20110216/AXA.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+
+[File 0003]
+File Type = "Include"
+Res Id = 3
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "AXD.h"
+Path = "/d/TCS_∞Ì»Ônew/tcs_goheung_20110216/AXD.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+
+[File 0004]
+File Type = "Include"
+Res Id = 4
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "AXDev.h"
+Path = "/d/TCS_∞Ì»Ônew/tcs_goheung_20110216/AXDev.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+
+[File 0005]
+File Type = "Include"
+Res Id = 5
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "AXHD.h"
+Path = "/d/TCS_∞Ì»Ônew/tcs_goheung_20110216/AXHD.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+
+[File 0006]
+File Type = "Include"
+Res Id = 6
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "AXHS.h"
+Path = "/d/TCS_∞Ì»Ônew/tcs_goheung_20110216/AXHS.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+
+[File 0007]
+File Type = "Include"
+Res Id = 7
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "AXL.h"
+Path = "/d/TCS_∞Ì»Ônew/tcs_goheung_20110216/AXL.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+
+[File 0008]
+File Type = "Library"
+Res Id = 8
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "AXLNet.lib"
+Path = "/d/TCS_∞Ì»Ônew/tcs_goheung_20110216/AXLNet.lib"
+Exclude = False
+Project Flags = 0
+Folder = "Not In A Folder"
+
+[File 0009]
+File Type = "Include"
+Res Id = 9
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "AXM.h"
+Path = "/d/TCS_∞Ì»Ônew/tcs_goheung_20110216/AXM.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+
+[File 0010]
+File Type = "CSource"
+Res Id = 10
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "cal_sub.c"
+Path = "/d/TCS_∞Ì»Ônew/tcs_goheung_20110216/cal_sub.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+
+[File 0011]
+File Type = "Include"
+Res Id = 11
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "cal_sub.h"
+Path = "/d/TCS_∞Ì»Ônew/tcs_goheung_20110216/cal_sub.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+
+[File 0012]
+File Type = "CSource"
+Res Id = 12
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "catalog.c"
+Path = "/d/TCS_∞Ì»Ônew/tcs_goheung_20110216/catalog.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+
+[File 0013]
+File Type = "Include"
+Res Id = 13
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "catalog.h"
+Path = "/d/TCS_∞Ì»Ônew/tcs_goheung_20110216/catalog.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+
+[File 0014]
+File Type = "User Interface Resource"
+Res Id = 14
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "catalog.uir"
+Path = "/d/TCS_∞Ì»Ônew/tcs_goheung_20110216/catalog.uir"
+Exclude = False
+Project Flags = 0
+Folder = "User Interface Files"
+
+[File 0015]
+File Type = "CSource"
+Res Id = 15
+Path Is Rel = False
+Path = "/c/lib/cal_lib/cvi_util.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+
+[File 0016]
+File Type = "CSource"
+Res Id = 16
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "dome_control.c"
+Path = "/d/TCS_∞Ì»Ônew/tcs_goheung_20110216/dome_control.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+
+[File 0017]
+File Type = "User Interface Resource"
+Res Id = 17
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "dome_control.uir"
+Path = "/d/TCS_∞Ì»Ônew/tcs_goheung_20110216/dome_control.uir"
+Exclude = False
+Project Flags = 0
+Folder = "User Interface Files"
+
+[File 0018]
+File Type = "CSource"
+Res Id = 18
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "dome_sub.c"
+Path = "/d/TCS_∞Ì»Ônew/tcs_goheung_20110216/dome_sub.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+
+[File 0019]
+File Type = "CSource"
+Res Id = 19
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "ec_test.c"
+Path = "/d/TCS_∞Ì»Ônew/tcs_goheung_20110216/ec_test.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+
+[File 0020]
+File Type = "User Interface Resource"
+Res Id = 20
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "ec_test.uir"
+Path = "/d/TCS_∞Ì»Ônew/tcs_goheung_20110216/ec_test.uir"
+Exclude = False
+Project Flags = 0
+Folder = "User Interface Files"
+
+[File 0021]
+File Type = "CSource"
+Res Id = 21
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "guide_sub.c"
+Path = "/d/TCS_∞Ì»Ônew/tcs_goheung_20110216/guide_sub.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+
+[File 0022]
+File Type = "User Interface Resource"
+Res Id = 22
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "guide_sub.uir"
+Path = "/d/TCS_∞Ì»Ônew/tcs_goheung_20110216/guide_sub.uir"
+Exclude = False
+Project Flags = 0
+Folder = "User Interface Files"
+
+[File 0023]
+File Type = "Include"
+Res Id = 23
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "gv_tel.h"
+Path = "/d/TCS_∞Ì»Ônew/tcs_goheung_20110216/gv_tel.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+
+[File 0024]
+File Type = "CSource"
+Res Id = 24
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "initiation.c"
+Path = "/d/TCS_∞Ì»Ônew/tcs_goheung_20110216/initiation.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+
+[File 0025]
+File Type = "Include"
+Res Id = 25
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "initiation.h"
+Path = "/d/TCS_∞Ì»Ônew/tcs_goheung_20110216/initiation.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+
+[File 0026]
+File Type = "CSource"
+Res Id = 26
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "scan_sub.c"
+Path = "/d/TCS_∞Ì»Ônew/tcs_goheung_20110216/scan_sub.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+
+[File 0027]
+File Type = "CSource"
+Res Id = 27
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "sky_scan.c"
+Path = "/d/TCS_∞Ì»Ônew/tcs_goheung_20110216/sky_scan.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+
+[File 0028]
+File Type = "User Interface Resource"
+Res Id = 28
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "sky_scan.uir"
+Path = "/d/TCS_∞Ì»Ônew/tcs_goheung_20110216/sky_scan.uir"
+Exclude = False
+Project Flags = 0
+Folder = "User Interface Files"
+
+[File 0029]
+File Type = "CSource"
+Res Id = 29
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "st4s_lib.c"
+Path = "/d/TCS_∞Ì»Ônew/tcs_goheung_20110216/st4s_lib.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+
+[File 0030]
+File Type = "Include"
+Res Id = 30
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "st4s_lib.h"
+Path = "/d/TCS_∞Ì»Ônew/tcs_goheung_20110216/st4s_lib.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+
+[File 0031]
+File Type = "CSource"
+Res Id = 31
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "tcs.c"
+Path = "/d/TCS_∞Ì»Ônew/tcs_goheung_20110216/tcs.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+
+[File 0032]
+File Type = "User Interface Resource"
+Res Id = 32
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "TCS.uir"
+Path = "/d/TCS_∞Ì»Ônew/tcs_goheung_20110216/TCS.uir"
+Exclude = False
+Project Flags = 0
+Folder = "User Interface Files"
+
+[File 0033]
+File Type = "CSource"
+Res Id = 33
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "tcs_ajin.c"
+Path = "/d/TCS_∞Ì»Ônew/tcs_goheung_20110216/tcs_ajin.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+
+[File 0034]
+File Type = "User Interface Resource"
+Res Id = 34
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "tcs_ajin.uir"
+Path = "/d/TCS_∞Ì»Ônew/tcs_goheung_20110216/tcs_ajin.uir"
+Exclude = False
+Project Flags = 0
+Folder = "User Interface Files"
+
+[File 0035]
+File Type = "CSource"
+Res Id = 35
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "tel_sub.c"
+Path = "/d/TCS_∞Ì»Ônew/tcs_goheung_20110216/tel_sub.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+
+[File 0036]
+File Type = "Include"
+Res Id = 36
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "tel_sub.h"
+Path = "/d/TCS_∞Ì»Ônew/tcs_goheung_20110216/tel_sub.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+
+[File 0037]
+File Type = "CSource"
+Res Id = 37
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "TheSky_server.c"
+Path = "/d/TCS_∞Ì»Ônew/tcs_goheung_20110216/TheSky_server.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+
+[File 0038]
+File Type = "Include"
+Res Id = 38
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "type_def.h"
+Path = "/d/TCS_∞Ì»Ônew/tcs_goheung_20110216/type_def.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+
+[Folders]
+Instrument Files Folder Not Added Yet = True
+Folder 0 = "Include Files"
+Folder 1 = "Source Files"
+Folder 2 = "User Interface Files"
+
+[Compiler Options]
+Default Calling Convention = "cdecl"
+Require Prototypes = True
+Require Return Values = True
+Enable Pointer Mismatch Warning = False
+Enable Unreachable Code Warning = False
+Enable Unreferenced Identifiers Warning = False
+Enable Assignment In Conditional Warning = False
+O Option Compatible With 5.0 = False
+Uninitialized Locals Compile Warning = "Conservative"
+
+[Run Options]
+Stack Size = 250000
+Image Base Address = 4194304
+
+[Compiler Defines]
+Compiler Defines = "/DWIN32_LEAN_AND_MEAN"
+
+[Include Paths]
+Include Path 1 Is Rel = True
+Include Path 1 Rel To = "Project"
+Include Path 1 Rel Path = ""
+Include Path 1 = "/d/TCS_∞Ì»Ônew/tcs_goheung_20110216"
+
+[Create Executable]
+Executable File_Debug Is Rel = True
+Executable File_Debug Rel To = "Project"
+Executable File_Debug Rel Path = "tcs.exe"
+Executable File_Debug = "/d/TCS_∞Ì»Ônew/tcs_goheung_20110216/tcs.exe"
+Executable File_Release Is Rel = True
+Executable File_Release Rel To = "Project"
+Executable File_Release Rel Path = "tcs.exe"
+Executable File_Release = "/d/TCS_∞Ì»Ônew/tcs_goheung_20110216/tcs.exe"
+Icon File Is Rel = False
+Icon File = ""
+Application Title = ""
+DLL Exports = "Include File Symbols"
+DLL Import Library Choice = "Gen Lib For Current Mode"
+Use IVI Subdirectories for Import Libraries = False
+Use VXIPNP Subdirectories for Import Libraries = False
+Use Dflt Import Lib Base Name = True
+Where to Copy DLL = "Do not copy"
+Add Type Lib To DLL = False
+Include Type Lib Help Links = False
+Type Lib FP File Is Rel = False
+Type Lib FP File = ""
+Type Lib Guid = ""
+Runtime Support = "Full Runtime Support"
+Instrument Driver Support Only = False
+Embed Project .UIRs = False
+Generate Map File = False
+
+[External Compiler Support]
+UIR Callbacks File Option = 0
+Using LoadExternalModule = False
+Create Project Symbols File = True
+UIR Callbacks Obj File Is Rel = False
+UIR Callbacks Obj File = ""
+Project Symbols H File Is Rel = False
+Project Symbols H File = ""
+Project Symbols Obj File Is Rel = False
+Project Symbols Obj File = ""
+
+[Modules Forced Into Executable]
+Module 0001 Is Rel = False
+Module 0001 = "AXLNet.lib"
+
+[ActiveX Server Options]
+Specification File Is Rel = False
+Specification File = ""
+Source File Is Rel = False
+Source File = ""
+Include File Is Rel = False
+Include File = ""
+IDL File Is Rel = False
+IDL File = ""
+Register ActiveX Server = False
+
+[Signing Info]
+Sign = False
+Sign Debug Build = False
+Store = ""
+Certificate = ""
+Timestamp URL = ""
+URL = ""
+
+[Manifest Info]
+Embed = False
+
+[tpcSection]
+tpcEnabled = 0
+tpcOverrideEnvironment = 0
+
