@@ -138,20 +138,9 @@ int main (int argc, char *argv[])
     if (InitCVIRTE (0, argv, 0) == 0)    /* Initialize CVI libraries */
         return -1;    /* out of memory */
         
-    // Ask user if this is a Server or Client
-    status = GenericMessagePopup ("Start a Server or Client?",
-                                  "Choose which type of application this is:",
-                                  "Server", "Client", "Cancel", NULL, 0,
-                                  0, VAL_GENERIC_POPUP_BTN1,
-                                  VAL_GENERIC_POPUP_BTN1,
-                                  VAL_GENERIC_POPUP_BTN3);
-                                  
-    // Check results of prompt                                  
-    if (status == VAL_GENERIC_POPUP_BTN1)
-        bServerApp = 1;
-    else if (status == VAL_GENERIC_POPUP_BTN2)
+
         bServerApp = 0;
-    else goto Done;
+
     
     // Display and run panel    
     if ((panelHandle = LoadPanel (0, "sharemem.uir", PANEL)) < 0)
@@ -162,7 +151,7 @@ int main (int argc, char *argv[])
     
     // Update UIR panel title
     sprintf(msgBuffer, "SHAREMEM Sample %s (Process ID:%8x)", 
-        (bServerApp)?"Server":"Client", 
+        "Client", 
         (int)GetCurrentProcessId() );									 // Getting a ProcessId
     SetPanelAttribute (panelHandle, ATTR_TITLE, msgBuffer);
     
@@ -668,16 +657,9 @@ int UploadServerToSHM(const char data[])
     static size_t currentLen, appendLen;
     static char *buffer;
     static int fullBuffers;
-	char buf[128];
-	strcpy(buf,data);
-	if(strncmp(buf,"r",1)==0) {
-		sscanf(&buf[1], "%d %d %lf %d %d %lf", &rah, &ram, &ras, &decd, &decm, &decs);
-	}
-	else {
-		sprintf(buf,"Error\n");
-		SetCtrlVal (panelHandle, PANEL_RECEIVELIST, buf);
-		return 0;
-	}
+	
+	sscanf(data, "%d %d %lf %d %d %lf", &rah, &ram, &ras, &decd, &decm, &decs);
+
     if (!sharedMemory)
             return 0;
        

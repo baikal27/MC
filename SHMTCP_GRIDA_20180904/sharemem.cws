@@ -1,22 +1,22 @@
 [Workspace Header]
-Version = 1300
-Pathname = "/d/sharemem_original_parameter_20180904/sharemem.cws"
-CVI Dir = "/c/program files/national instruments/cvi2013"
-CVI Shared Dir = "/C/Program Files/National Instruments/Shared/CVI"
+Version = 1301
+Pathname = "/d/GOHEUNG/MC/SHMTCP_GRIDA_20180904/sharemem.cws"
+CVI Dir = "/c/program files (x86)/national instruments/cvi2013"
+CVI Shared Dir = "/C/Program Files (x86)/National Instruments/Shared/CVI"
 CVI Pub Local Dir = "/C/ProgramData/National Instruments/CVI2013"
 CVI Pub Global Dir = "/C/ProgramData/National Instruments/CVI"
-IVI Standard Root Dir = "/C/Program Files/IVI Foundation/IVI"
+IVI Standard Root Dir = "/C/Program Files (x86)/IVI Foundation/IVI"
 IVI Standard Root 64-bit Dir = "/C/Program Files/IVI Foundation/IVI"
-VXIplug&play Framework Dir = "/C/Program Files/IVI Foundation/VISA/winnt"
+VXIplug&play Framework Dir = "/C/Program Files (x86)/IVI Foundation/VISA/winnt"
 VXIplug&play Framework 64-bit Dir = "/C/Program Files/IVI Foundation/VISA/win64"
 Number of Projects = 1
 Active Project = 1
 Project 0001 = "sharemem.prj"
-Drag Bar Left = 223
-Window Top = 30
-Window Left = 125
-Window Bottom = 852
-Window Right = 1069
+Drag Bar Left = 160
+Window Top = 31
+Window Left = 26
+Window Bottom = 533
+Window Right = 816
 Maximized = True
 Maximized Children = True
 Max32 Number Of Errors = 20
@@ -30,14 +30,14 @@ Save Changes Before Compiling = "Always"
 Hide Windows = False
 Break At First Statement = False
 Sort Type = "File Name"
-Number of Opened Files = 6
+Number of Opened Files = 7
 Window Confinement Region Enabled = True
-MainColumnWidth = 206
+MainColumnWidth = 143
 FileDateColumnWidth = 70
 FileSizeColumnWidth = 70
 
 [Project Header 0001]
-Version = 1300
+Version = 1301
 Don't Update DistKit = False
 Platform Code = 4
 Build Configuration = "Debug"
@@ -46,66 +46,76 @@ Batch Build Release = False
 Batch Build Debug = False
 
 [File 0001]
-Path = "/d/sharemem_original_parameter_20180904/sharemem.c"
+Path = "/d/GOHEUNG/MC/SHMTCP_GRIDA_20180904/shm_client.c"
 File Type = "CSource"
-Disk Date = 3618872977
-In Projects = "1,"
+Disk Date = 3620265218
+In Projects = ""
 Window Top = 32
 Window Left = 10
-Window Z-Order = 1
-Source Window State = "1,208,209,208,0,18,0,0,0,224,0,0,0,0,0,32,807,0,815,169,349,518,1,17,"
-Breakpoint 0001 = "579,0,enabled,"
+Window Z-Order = 3
+Source Window State = "1,125,125,125,16,35,35,0,0,80,0,0,0,0,0,25,95,0,87,91,349,518,1,17,"
+Breakpoint 0001 = "568,0,enabled,"
 
 [File 0002]
-Path = "/d/sharemem_original_parameter_20180904/sharemem.uir"
+Path = "/d/GOHEUNG/MC/SHMTCP_GRIDA_20180904/sharemem.uir"
 File Type = "User Interface Resource"
-Disk Date = 3618396963
+Disk Date = 3620262253
 In Projects = "1,"
 Window Top = 32
 Window Left = 10
 Window Height = 349
 Window Width = 638
-Window Z-Order = 3
+Window Z-Order = 2
 
 [File 0003]
-Path = "/d/sharemem_original_parameter_20180904/sharemem.h"
+Path = "/d/GOHEUNG/MC/SHMTCP_GRIDA_20180904/sharemem.h"
 File Type = "Include"
-Disk Date = 3618396963
+Disk Date = 3620262253
 In Projects = ""
 Window Top = 122
 Window Left = 58
-Window Z-Order = 4
+Window Z-Order = 5
 Source Window State = "1,17,17,17,9,27,27,0,3,80,0,0,0,0,0,25,16,0,17,9,349,518,1,0,"
 
 [File 0004]
-Path = "/c/Program Files/National Instruments/CVI2013/include/userint.h"
+Path = "/c/Program Files (x86)/National Instruments/CVI2013/include/userint.h"
 File Type = "Include"
-Disk Date = 3455053200
+Disk Date = 3472592400
 In Projects = ""
 Window Top = 32
 Window Left = 10
-Window Z-Order = 6
+Window Z-Order = 7
 Source Window State = "1,2507,2507,2507,12,31,31,0,3,80,0,0,0,0,0,25,2495,0,2507,12,349,518,1,0,"
 
 [File 0005]
-Path = "/d/sharemem_original_parameter_20180904/assist.c"
+Path = "/d/GOHEUNG/MC/SHMTCP_GRIDA_20180904/assist.c"
 File Type = "CSource"
-Disk Date = 3618388345
+Disk Date = 3620262252
 In Projects = ""
 Window Top = 92
 Window Left = 42
-Window Z-Order = 5
+Window Z-Order = 6
 Source Window State = "1,541,567,541,11,13,11,0,0,100,0,0,0,0,0,25,196,0,320,56,349,638,1,0,"
 
 [File 0006]
-Path = "/d/sharemem_original_parameter_20180904/server.c"
+Path = "/d/GOHEUNG/MC/SHMTCP_GRIDA_20180904/server.c"
 File Type = "CSource"
-Disk Date = 3455053200
+Disk Date = 3620262252
 In Projects = ""
 Window Top = 32
 Window Left = 10
-Window Z-Order = 2
+Window Z-Order = 4
 Source Window State = "1,99,123,99,0,1,0,0,3,118,0,0,0,0,0,25,84,0,123,1,349,746,1,0,"
+
+[File 0007]
+Path = "/d/GOHEUNG/MC/SHMTCP_GRIDA_20180904/sharemem.c"
+File Type = "CSource"
+Disk Date = 3620267483
+In Projects = "1,"
+Window Top = 33
+Window Left = 10
+Window Z-Order = 1
+Source Window State = "1,671,671,671,7,8,7,0,3,287,0,0,0,0,0,46,629,0,671,8,349,776,1,0,"
 
 [Default Build Config 0001 Debug]
 Generate Browse Info = True

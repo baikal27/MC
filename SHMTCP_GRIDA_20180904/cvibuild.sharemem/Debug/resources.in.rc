@@ -1,6 +1,6 @@
-#include "c:\program files\national instruments\cvi2013\sdk\include\winver.h"
+#include "c:\program files (x86)\national instruments\cvi2013\sdk\include\winver.h"
 
-2 ICON "c:\\program files\\national instruments\\cvi2013\\bin\\default.ico"
+2 ICON "c:\\program files (x86)\\national instruments\\cvi2013\\bin\\default.ico"
 
 STRINGTABLE DISCARDABLE
 BEGIN
