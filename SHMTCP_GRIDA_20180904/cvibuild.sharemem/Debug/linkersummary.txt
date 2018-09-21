@@ -1,4 +1,4 @@
-sharemem.obj
+shmtcp_server.obj
 cvi.lib
 cvistart.lib
 kernel32.lib

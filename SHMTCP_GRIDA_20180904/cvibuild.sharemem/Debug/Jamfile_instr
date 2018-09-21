@@ -1,4 +1,4 @@
-Depends "d:\\GOHEUNG\\MC\\SHMTCP_GRIDA_20180904\\cvibuild.sharemem\\Debug\\sharemem_dbg.exe" : "d:\\GOHEUNG\\MC\\SHMTCP_GRIDA_20180904\\cvibuild.sharemem\\Debug\\sharemem.obj" ;
+Depends "d:\\GOHEUNG\\MC\\SHMTCP_GRIDA_20180904\\cvibuild.sharemem\\Debug\\sharemem_dbg.exe" : "d:\\GOHEUNG\\MC\\SHMTCP_GRIDA_20180904\\cvibuild.sharemem\\Debug\\shmtcp_server.obj" ;
 Depends "d:\\GOHEUNG\\MC\\SHMTCP_GRIDA_20180904\\cvibuild.sharemem\\Debug\\sharemem_dbg.exe" : "c:\\program files (x86)\\national instruments\\cvi2013\\sdk\\lib\\msvc\\advapi32.lib" ;
 NoCare "c:\\program files (x86)\\national instruments\\cvi2013\\sdk\\lib\\msvc\\advapi32.lib" ;
 Depends "d:\\GOHEUNG\\MC\\SHMTCP_GRIDA_20180904\\cvibuild.sharemem\\Debug\\sharemem_dbg.exe" : "c:\\ProgramData\\National Instruments\\CVI2013\\bin\\msvc\\analysis.lib" ;

@@ -12,10 +12,10 @@ VXIplug&play Framework 64-bit Dir = "/C/Program Files/IVI Foundation/VISA/win64"
 Number of Projects = 1
 Active Project = 1
 Project 0001 = "sharemem.prj"
-Drag Bar Left = 160
-Window Top = 31
+Drag Bar Left = 193
+Window Top = 35
 Window Left = 26
-Window Bottom = 533
+Window Bottom = 537
 Window Right = 816
 Maximized = True
 Maximized Children = True
@@ -30,9 +30,9 @@ Save Changes Before Compiling = "Always"
 Hide Windows = False
 Break At First Statement = False
 Sort Type = "File Name"
-Number of Opened Files = 7
+Number of Opened Files = 5
 Window Confinement Region Enabled = True
-MainColumnWidth = 143
+MainColumnWidth = 176
 FileDateColumnWidth = 70
 FileSizeColumnWidth = 70
 
@@ -46,26 +46,26 @@ Batch Build Release = False
 Batch Build Debug = False
 
 [File 0001]
+Path = "/d/GOHEUNG/MC/SHMTCP_GRIDA_20180904/sharemem.uir"
+File Type = "User Interface Resource"
+Disk Date = 3620262253
+In Projects = "1,"
+Window Top = 33
+Window Left = 10
+Window Height = 271
+Window Width = 518
+Window Z-Order = 3
+
+[File 0002]
 Path = "/d/GOHEUNG/MC/SHMTCP_GRIDA_20180904/shm_client.c"
 File Type = "CSource"
 Disk Date = 3620265218
 In Projects = ""
 Window Top = 32
 Window Left = 10
-Window Z-Order = 3
-Source Window State = "1,125,125,125,16,35,35,0,0,80,0,0,0,0,0,25,95,0,87,91,349,518,1,17,"
-Breakpoint 0001 = "568,0,enabled,"
-
-[File 0002]
-Path = "/d/GOHEUNG/MC/SHMTCP_GRIDA_20180904/sharemem.uir"
-File Type = "User Interface Resource"
-Disk Date = 3620262253
-In Projects = "1,"
-Window Top = 32
-Window Left = 10
-Window Height = 349
-Window Width = 638
 Window Z-Order = 2
+Source Window State = "1,125,125,125,16,35,35,0,0,80,0,83,0,0,0,25,0,0,15,50,349,518,1,0,"
+Breakpoint 0001 = "568,0,enabled,"
 
 [File 0003]
 Path = "/d/GOHEUNG/MC/SHMTCP_GRIDA_20180904/sharemem.h"
@@ -74,7 +74,7 @@ Disk Date = 3620262253
 In Projects = ""
 Window Top = 122
 Window Left = 58
-Window Z-Order = 5
+Window Z-Order = 4
 Source Window State = "1,17,17,17,9,27,27,0,3,80,0,0,0,0,0,25,16,0,17,9,349,518,1,0,"
 
 [File 0004]
@@ -84,38 +84,16 @@ Disk Date = 3472592400
 In Projects = ""
 Window Top = 32
 Window Left = 10
-Window Z-Order = 7
+Window Z-Order = 5
 Source Window State = "1,2507,2507,2507,12,31,31,0,3,80,0,0,0,0,0,25,2495,0,2507,12,349,518,1,0,"
 
 [File 0005]
-Path = "/d/GOHEUNG/MC/SHMTCP_GRIDA_20180904/assist.c"
-File Type = "CSource"
-Disk Date = 3620262252
-In Projects = ""
-Window Top = 92
-Window Left = 42
-Window Z-Order = 6
-Source Window State = "1,541,567,541,11,13,11,0,0,100,0,0,0,0,0,25,196,0,320,56,349,638,1,0,"
-
-[File 0006]
-Path = "/d/GOHEUNG/MC/SHMTCP_GRIDA_20180904/server.c"
-File Type = "CSource"
-Disk Date = 3620262252
-In Projects = ""
-Window Top = 32
-Window Left = 10
-Window Z-Order = 4
-Source Window State = "1,99,123,99,0,1,0,0,3,118,0,0,0,0,0,25,84,0,123,1,349,746,1,0,"
-
-[File 0007]
-Path = "/d/GOHEUNG/MC/SHMTCP_GRIDA_20180904/sharemem.c"
+Path = "/d/GOHEUNG/MC/SHMTCP_GRIDA_20180904/shmtcp_server.c"
 File Type = "CSource"
 Disk Date = 3620267483
 In Projects = "1,"
-Window Top = 33
-Window Left = 10
 Window Z-Order = 1
-Source Window State = "1,671,671,671,7,8,7,0,3,287,0,0,0,0,0,46,629,0,671,8,349,776,1,0,"
+Source Window State = "1,19,19,19,365,366,365,0,0,602,0,0,0,0,0,129,0,0,11,498,400,600,0,0,"
 
 [Default Build Config 0001 Debug]
 Generate Browse Info = True

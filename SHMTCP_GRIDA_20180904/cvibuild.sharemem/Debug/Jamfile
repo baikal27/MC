@@ -30,11 +30,11 @@ HDRS = 	"c:\\program files (x86)\\national instruments\\cvi2013\\include"
 	"c:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\Bin"
 	;
 include Jamfile_instr ;
-Object "d:\\GOHEUNG\\MC\\SHMTCP_GRIDA_20180904\\cvibuild.sharemem\\Debug\\sharemem.obj" : "d:\\GOHEUNG\\MC\\SHMTCP_GRIDA_20180904\\sharemem.c" ;
-FILENUM on "d:\\GOHEUNG\\MC\\SHMTCP_GRIDA_20180904\\cvibuild.sharemem\\Debug\\sharemem.obj" = 1 ;
-DEFPROTS on "d:\\GOHEUNG\\MC\\SHMTCP_GRIDA_20180904\\cvibuild.sharemem\\Debug\\sharemem.obj" = "d:\\GOHEUNG\\MC\\SHMTCP_GRIDA_20180904\\cvibuild.sharemem\\Debug\\sharemem.obj.cvidefprots" ;
-OUTFILE on "d:\\GOHEUNG\\MC\\SHMTCP_GRIDA_20180904\\cvibuild.sharemem\\Debug\\sharemem.obj" = "d:\\GOHEUNG\\MC\\SHMTCP_GRIDA_20180904\\cvibuild.sharemem\\Debug\\sharemem.obj.out" ;
-PrjObjects += "d:\\GOHEUNG\\MC\\SHMTCP_GRIDA_20180904\\cvibuild.sharemem\\Debug\\sharemem.obj" ;
+Object "d:\\GOHEUNG\\MC\\SHMTCP_GRIDA_20180904\\cvibuild.sharemem\\Debug\\shmtcp_server.obj" : "d:\\GOHEUNG\\MC\\SHMTCP_GRIDA_20180904\\shmtcp_server.c" ;
+FILENUM on "d:\\GOHEUNG\\MC\\SHMTCP_GRIDA_20180904\\cvibuild.sharemem\\Debug\\shmtcp_server.obj" = 1 ;
+DEFPROTS on "d:\\GOHEUNG\\MC\\SHMTCP_GRIDA_20180904\\cvibuild.sharemem\\Debug\\shmtcp_server.obj" = "d:\\GOHEUNG\\MC\\SHMTCP_GRIDA_20180904\\cvibuild.sharemem\\Debug\\shmtcp_server.obj.cvidefprots" ;
+OUTFILE on "d:\\GOHEUNG\\MC\\SHMTCP_GRIDA_20180904\\cvibuild.sharemem\\Debug\\shmtcp_server.obj" = "d:\\GOHEUNG\\MC\\SHMTCP_GRIDA_20180904\\cvibuild.sharemem\\Debug\\shmtcp_server.obj.out" ;
+PrjObjects += "d:\\GOHEUNG\\MC\\SHMTCP_GRIDA_20180904\\cvibuild.sharemem\\Debug\\shmtcp_server.obj" ;
 Object "d:\\GOHEUNG\\MC\\SHMTCP_GRIDA_20180904\\cvibuild.sharemem\\Debug\\resources.res" : "d:\\GOHEUNG\\MC\\SHMTCP_GRIDA_20180904\\cvibuild.sharemem\\Debug\\resources.in.rc" ;
 MainFromObjects "d:\\GOHEUNG\\MC\\SHMTCP_GRIDA_20180904\\cvibuild.sharemem\\Debug\\sharemem_dbg.exe" : $(PrjObjects) $(InstrObjects) ;
 Depends "d:\\GOHEUNG\\MC\\SHMTCP_GRIDA_20180904\\cvibuild.sharemem\\Debug\\sharemem_dbg.exe" : "d:\\GOHEUNG\\MC\\SHMTCP_GRIDA_20180904\\cvibuild.sharemem\\Debug\\link_options.txt" ;

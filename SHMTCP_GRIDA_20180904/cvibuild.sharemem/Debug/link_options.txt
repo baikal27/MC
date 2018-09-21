@@ -13,7 +13,7 @@
 -browsedeps:d:\GOHEUNG\MC\SHMTCP_GRIDA_20180904\cvibuild.sharemem\Debug\moduledependencies.txt
 -stackreserve:131072
 -stackcommit:4096
--in:d:\GOHEUNG\MC\SHMTCP_GRIDA_20180904\cvibuild.sharemem\Debug\sharemem.obj
+-in:d:\GOHEUNG\MC\SHMTCP_GRIDA_20180904\cvibuild.sharemem\Debug\shmtcp_server.obj
 -more:c:\program files (x86)\national instruments\cvi2013\bin\msvc\cvistart.lib
 -more:c:\program files (x86)\national instruments\cvi2013\bin\msvc\cvi.lib
 -more:c:\program files (x86)\national instruments\cvi2013\sdk\lib\msvc\advapi32.lib
