@@ -1,4 +1,4 @@
-shmtcp_server.obj
+shm_client.obj
 cvi.lib
 cvistart.lib
 kernel32.lib

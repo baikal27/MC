@@ -1,23 +1,23 @@
 [Workspace Header]
-Version = 1301
-Pathname = "/d/GOHEUNG/MC/SHMTCP_GRIDA_20180904/sharemem.cws"
-CVI Dir = "/c/program files (x86)/national instruments/cvi2013"
-CVI Shared Dir = "/C/Program Files (x86)/National Instruments/Shared/CVI"
+Version = 1300
+Pathname = "/d/MC/SHMTCP_GRIDA_20180904/sharemem.cws"
+CVI Dir = "/c/program files/national instruments/cvi2013"
+CVI Shared Dir = "/C/Program Files/National Instruments/Shared/CVI"
 CVI Pub Local Dir = "/C/ProgramData/National Instruments/CVI2013"
 CVI Pub Global Dir = "/C/ProgramData/National Instruments/CVI"
-IVI Standard Root Dir = "/C/Program Files (x86)/IVI Foundation/IVI"
+IVI Standard Root Dir = "/C/Program Files/IVI Foundation/IVI"
 IVI Standard Root 64-bit Dir = "/C/Program Files/IVI Foundation/IVI"
-VXIplug&play Framework Dir = "/C/Program Files (x86)/IVI Foundation/VISA/winnt"
+VXIplug&play Framework Dir = "/C/Program Files/IVI Foundation/VISA/winnt"
 VXIplug&play Framework 64-bit Dir = "/C/Program Files/IVI Foundation/VISA/win64"
 Number of Projects = 1
 Active Project = 1
 Project 0001 = "sharemem.prj"
-Drag Bar Left = 193
-Window Top = 35
-Window Left = 26
-Window Bottom = 537
-Window Right = 816
-Maximized = True
+Drag Bar Left = 223
+Window Top = 103
+Window Left = 406
+Window Bottom = 925
+Window Right = 1350
+Maximized = False
 Maximized Children = True
 Max32 Number Of Errors = 20
 Track Include File Dependencies = True
@@ -32,12 +32,12 @@ Break At First Statement = False
 Sort Type = "File Name"
 Number of Opened Files = 5
 Window Confinement Region Enabled = True
-MainColumnWidth = 176
+MainColumnWidth = 206
 FileDateColumnWidth = 70
 FileSizeColumnWidth = 70
 
 [Project Header 0001]
-Version = 1301
+Version = 1300
 Don't Update DistKit = False
 Platform Code = 4
 Build Configuration = "Debug"
@@ -46,41 +46,41 @@ Batch Build Release = False
 Batch Build Debug = False
 
 [File 0001]
-Path = "/d/GOHEUNG/MC/SHMTCP_GRIDA_20180904/sharemem.uir"
+Path = "/d/MC/SHMTCP_GRIDA_20180904/sharemem.uir"
 File Type = "User Interface Resource"
-Disk Date = 3620262253
+Disk Date = 3621810990
 In Projects = "1,"
 Window Top = 33
 Window Left = 10
 Window Height = 271
 Window Width = 518
-Window Z-Order = 3
+Window Z-Order = 4
 
 [File 0002]
-Path = "/d/GOHEUNG/MC/SHMTCP_GRIDA_20180904/shm_client.c"
+Path = "/d/MC/SHMTCP_GRIDA_20180904/shm_client.c"
 File Type = "CSource"
-Disk Date = 3620265218
-In Projects = ""
+Disk Date = 3621844203
+In Projects = "1,"
 Window Top = 32
 Window Left = 10
 Window Z-Order = 2
-Source Window State = "1,125,125,125,16,35,35,0,0,80,0,83,0,0,0,25,0,0,15,50,349,518,1,0,"
-Breakpoint 0001 = "568,0,enabled,"
+Source Window State = "1,51,51,51,0,46,46,0,0,80,0,83,0,0,0,25,141,0,615,32,349,518,1,0,"
+Breakpoint 0001 = "566,0,enabled,"
 
 [File 0003]
-Path = "/d/GOHEUNG/MC/SHMTCP_GRIDA_20180904/sharemem.h"
+Path = "/d/MC/SHMTCP_GRIDA_20180904/sharemem.h"
 File Type = "Include"
-Disk Date = 3620262253
+Disk Date = 3621810990
 In Projects = ""
 Window Top = 122
 Window Left = 58
-Window Z-Order = 4
-Source Window State = "1,17,17,17,9,27,27,0,3,80,0,0,0,0,0,25,16,0,17,9,349,518,1,0,"
+Window Z-Order = 3
+Source Window State = "1,33,33,33,9,17,17,0,3,80,0,0,0,0,0,25,16,0,33,9,349,518,1,0,"
 
 [File 0004]
-Path = "/c/Program Files (x86)/National Instruments/CVI2013/include/userint.h"
+Path = "/c/Program Files/National Instruments/CVI2013/include/userint.h"
 File Type = "Include"
-Disk Date = 3472592400
+Disk Date = 3455053200
 In Projects = ""
 Window Top = 32
 Window Left = 10
@@ -88,12 +88,13 @@ Window Z-Order = 5
 Source Window State = "1,2507,2507,2507,12,31,31,0,3,80,0,0,0,0,0,25,2495,0,2507,12,349,518,1,0,"
 
 [File 0005]
-Path = "/d/GOHEUNG/MC/SHMTCP_GRIDA_20180904/shmtcp_server.c"
+Path = "/d/MC/SHMTCP_GRIDA_20180904/shmtcp_server.c"
 File Type = "CSource"
-Disk Date = 3620267483
-In Projects = "1,"
+Disk Date = 3621842881
+In Projects = ""
+Window Top = 30
 Window Z-Order = 1
-Source Window State = "1,19,19,19,365,366,365,0,0,602,0,0,0,0,0,129,0,0,11,498,400,600,0,0,"
+Source Window State = "1,678,678,678,19,20,20,0,0,114,0,0,0,0,0,33,160,0,181,78,400,600,1,0,"
 
 [Default Build Config 0001 Debug]
 Generate Browse Info = True

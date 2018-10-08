@@ -47,10 +47,8 @@ int TransmitTCPIP (char transmitBuf[]);
 /*---------------------------------------------------------------------------*/
 /* Internal function prototypes for SharedMemory                             */
 /*---------------------------------------------------------------------------*/
-int UploadServerToSHM(const char data[]);
 int DownloadSHMToTcs(void);
 int UploadTcsToSHM();
-int DownloadSHMToServer(char text_buffer[]);
 
 /*---------------------------------------------------------------------------*/
 /* Typedefs
@@ -81,7 +79,7 @@ typedef struct tcsAreaRec
 //	char cmd_x[COORD_BUFFER_SIZE], cmd_y[COORD_BUFFER_SIZE];
 	int cmd_x_h, cmd_x_m, cmd_y_d, cmd_y_m;
 	double cmd_x_s, cmd_y_s;
-	int cmd_tcsinit, cmd_park, cmd_init, cmd_stop, cmd_go_tel, cmd_man_w, cmd_man_e, cmd_man_up, cmd_man_down, cmd_go_off_go;
+	int cmd_go_flag, cmd_stop_flag, cmd_park_flag, cmd_tcsinit_flag, cmd_init_flag;     
 	double cmd_off_x, cmd_off_y;
 } tTcsArea;
 
@@ -241,7 +239,7 @@ int CVICALLBACK ServerTCPCB (unsigned handle, int event, int error,
 				{
 					receiveBuf[dataSize] = '\0';
 					SetCtrlVal (panelHandle, PANEL_RECEIVELIST, receiveBuf);
-					UploadServerToSHM(receiveBuf);
+//					UploadServerToSHM(receiveBuf);
 					
 				}									  
 			break;
@@ -602,7 +600,7 @@ int CVICALLBACK TimerCallback (int panel, int control, int event,
 		else
 		{
 			UploadTcsToSHM();
-			DownloadSHMToServer(text_buffer);
+//			DownloadSHMToServer(text_buffer);
 			InsertTextBoxLine (panel, PANEL_RECEIVELIST, -1, text_buffer);
 			TransmitTCPIP(text_buffer);
 		}
@@ -643,86 +641,6 @@ int CVICALLBACK Quit (int panel, int control, int event,
 }
 
 //----------------------------------------------------------------------------
-// Server to SharedMemory upload
-//----------------------------------------------------------------------------
-int UploadServerToSHM(const char data[])
-{
-//	char receiveBuf[256] = {0};
-	ssize_t dataSize        = sizeof (data) - 1;
-	char addrBuf[31];
-	int rah, ram, decd, decm;
-	double ras, decs;
-	
-	static int i;
-    static size_t currentLen, appendLen;
-    static char *buffer;
-    static int fullBuffers;
-	
-	sscanf(data, "%d %d %lf %d %d %lf", &rah, &ram, &ras, &decd, &decm, &decs);
-
-    if (!sharedMemory)
-            return 0;
-       
-            // Sent message by updating shared memory
-    if (bServerApp)
-    {
-                // Send server message to all clients by adding text
-                // to each client receive buffer
-    	
-		CmtGetLock(lock);
-		fullBuffers = 0;
-    
-		if (sharedMemory->tcs.tcsProcessID) 
-    	{
-
-			sharedMemory->tcs.cmd_x_h = rah ;
-			sharedMemory->tcs.cmd_x_m = ram ;
-			sharedMemory->tcs.cmd_x_s = ras ;
-			sharedMemory->tcs.cmd_y_d = decd ;
-			sharedMemory->tcs.cmd_y_m = decm ;
-			sharedMemory->tcs.cmd_y_s = decs ;
-		}
-/*
-//			currentLen = strlen(buffer);
-			
-			if (currentLen+appendLen<CLIENT_RECEIVE_BUFFER_SIZE)
-        	{
-//            	strcat(buffer, ra);
-//           	strcat(buffer, "\n");
-        	}    
-        	else fullBuffers++;
-        	{            
-            	InsertTextBoxLine (panelHandle, PANEL_TRANSMITLIST, -1, ra);
-			}
-			
-			appendLen = strlen(dec);
-			buffer = sharedMemory->tcs.cmd_y;
-			currentLen = strlen(buffer);
-			
-			if (currentLen+appendLen<CLIENT_RECEIVE_BUFFER_SIZE)
-        	{
-            	strcat(buffer, dec);
-            	strcat(buffer, "\n");
-        	}    
-        	else fullBuffers++;
-        	{            
-            	InsertTextBoxLine (panelHandle, PANEL_TRANSMITLIST, -1, dec);
-			}
-					
-			SetCtrlVal (panelHandle, PANEL_TRANSMIT, "");
-		
-        
-        if (fullBuffers)
-            MessagePopup("Server Error", "Client receive buffer full, cannot transmit");
-*/
-	
-		CmtReleaseLock(lock);
-	}
-	
-    return 0;
-}
-
-//----------------------------------------------------------------------------
 // download SharedMemory to tcs (이건 tcs program에서 해야할 일 같은데) 
 //----------------------------------------------------------------------------
 int DownloadSHMToTcs()
@@ -730,6 +648,7 @@ int DownloadSHMToTcs()
 	static char text_buff[256];
 	int rah, ram, decd, decm;
 	double ras, decs;
+	int go_flag, stop_flag, park_flag, tcsinit_flag, init_flag;
 	
 	if (!sharedMemory)
         return 0;
@@ -749,13 +668,21 @@ int DownloadSHMToTcs()
 			decd = sharedMemory->tcs.cmd_y_d ;
 			decm = sharedMemory->tcs.cmd_y_m ;
 			decs = sharedMemory->tcs.cmd_y_s ;
-				
+			go_flag = sharedMemory->tcs.cmd_go_flag ; 
+			stop_flag = sharedMemory->tcs.cmd_stop_flag ; 
+			park_flag = sharedMemory->tcs.cmd_park_flag ; 
+			tcsinit_flag = sharedMemory->tcs.cmd_tcsinit_flag ; 
+			init_flag = sharedMemory->tcs.cmd_init_flag ;
+			
 			sprintf(text_buff, "%2d %2d %3.1lf\n", rah, ram, ras) ;
-			SetCtrlVal(panelHandle, PANEL_RA, text_buff) ;
-				
+			SetCtrlVal(panelHandle, PANEL_RA, text_buff);
 			sprintf(text_buff, "%2d %2d %3.1lf\n", decd, decm, decs) ;
-			SetCtrlVal(panelHandle, PANEL_DEC, text_buff) ;
-			// Coordinate
+			SetCtrlVal(panelHandle, PANEL_DEC, text_buff);
+			
+			sprintf(text_buff, "go_flag: %1d stop_flag: %1d park_flag: %1d tcsinit_flag: %1d init_flag: %1d\n", go_flag, stop_flag, park_flag, tcsinit_flag, init_flag) ;
+			SetCtrlVal(panelHandle, PANEL_RECEIVELIST, text_buff) ;
+			
+
 		
 		}				  
 		CmtReleaseLock(lock);
@@ -806,48 +733,6 @@ int UploadTcsToSHM()
 	}
 	
     return 0;
-}
-
-//----------------------------------------------------------------------------
-// download SharedMemory to server  
-//----------------------------------------------------------------------------
-int DownloadSHMToServer(char text_buff[])
-{
-	int now_azh, now_azm, now_eld, now_elm;
-	double now_azs, now_el_s;
-	int now_rah, now_ram, now_decd, now_decm;
-	double now_ras, now_decs;
-//	static char text_buff[256];
-
-	if (!sharedMemory)
-            return 0;
-       
-            // Sent message by updating shared memory
-    if (bServerApp)
-    {
-		
-		CmtGetLock(lock);
-		if (sharedMemory->tcs.tcsProcessID)
-		{
-			// Coordinate
-			now_rah = sharedMemory->server.now_ra_h ;
-			now_ram = sharedMemory->server.now_ra_m ;
-			now_ras = sharedMemory->server.now_ra_s ;
-			now_decd = sharedMemory->server.now_dec_d ;
-			now_decm = sharedMemory->server.now_dec_m ;
-			now_decs = sharedMemory->server.now_dec_s ;
-				
-			sprintf(text_buff, "%2d %2d %3.1lf %2d %2d %3.1lf\n", now_rah, now_ram, now_ras, now_decd, now_decm, now_decs) ;			
-//			sprintf(buff, "%2d %2d %3.1lf\n", now_rah, now_ram, now_ras) ;
-//			strcat(buff, "%2d %2d %3.1lf\n", now_decd, now_decm, now_decs) ;
-//			strcat(buff, "\0");
-			// Coordinate
-		}
-		
-	}				  
-	CmtReleaseLock(lock);
-		
-	return 0;
 }
 
 //---------------------------------------------------------------------------//

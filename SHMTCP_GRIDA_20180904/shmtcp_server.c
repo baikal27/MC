@@ -81,8 +81,7 @@ typedef struct tcsAreaRec
 //	char cmd_x[COORD_BUFFER_SIZE], cmd_y[COORD_BUFFER_SIZE];
 	int cmd_x_h, cmd_x_m, cmd_y_d, cmd_y_m;
 	double cmd_x_s, cmd_y_s;
-	int cmd_tcsinit, cmd_park, cmd_init, cmd_stop, cmd_go_tel, cmd_man_w, cmd_man_e, cmd_man_up, cmd_man_down, cmd_go_off_go;
-	double cmd_off_x, cmd_off_y;
+	int cmd_go_flag, cmd_stop_flag, cmd_park_flag, cmd_tcsinit_flag, cmd_init_flag;
 } tTcsArea;
 
 typedef struct sharedMemTypeRec
@@ -212,7 +211,7 @@ int CVICALLBACK ServerTCPCB (unsigned handle, int event, int error,
 					tcpChk (GetTCPPeerAddr (handle, addrBuf, 31));
 					sprintf (receiveBuf, "-- Refusing conection request from "
 									 "%s --\n", addrBuf); 
-					SetCtrlVal (panelHandle, PANEL_RECEIVELIST, receiveBuf);
+//					SetCtrlVal (panelHandle, PANEL_RECEIVELIST, receiveBuf);
 					tcpChk (DisconnectTCPClient (handle));
 				}
 			else
@@ -251,7 +250,7 @@ int CVICALLBACK ServerTCPCB (unsigned handle, int event, int error,
 			else
 				{
 					receiveBuf[dataSize] = '\0';
-					SetCtrlVal (panelHandle, PANEL_RECEIVELIST, receiveBuf);
+//					SetCtrlVal (panelHandle, PANEL_RECEIVELIST, receiveBuf);
 					UploadServerToSHM(receiveBuf);
 					
 				}									  
@@ -661,7 +660,7 @@ int UploadServerToSHM(const char data[])
 //	char receiveBuf[256] = {0};
 	ssize_t dataSize        = sizeof (data) - 1;
 	char addrBuf[31];
-	int rah, ram, decd, decm;
+	int rah, ram, decd, decm, go_flag, stop_flag, park_flag, tcsinit_flag, init_flag;
 	double ras, decs;
 	
 	static int i;
@@ -669,18 +668,44 @@ int UploadServerToSHM(const char data[])
     static char *buffer;
     static int fullBuffers;
 	char buf[128];
-	strcpy(buf,data);
-	if(strncmp(buf,"r",1)==0) {
+	static char text_buff[256];
+	char *ptr;
+
+	if (!sharedMemory)
+            return 0;
+	
+	strcpy(buf, data);
+
+	if(strncmp(buf,"c",1)==0) {
 		sscanf(&buf[1], "%d %d %lf %d %d %lf", &rah, &ram, &ras, &decd, &decm, &decs);
 	}
+	
+	if(ptr = strchr(buf, 'g')) {
+		sscanf(ptr+1, "%d", &go_flag);
+	}
+	
+	if(ptr = strchr(buf, 's')) {
+		sscanf(ptr+1, "%d", &stop_flag);
+	}
+	
+	if(ptr = strchr(buf, 'p')) {
+		sscanf(ptr+1, "%d", &park_flag);
+	}
+
+	if(ptr = strchr(buf, 't')) {
+		sscanf(ptr+1, "%d", &tcsinit_flag);
+	}
+	
+	if(ptr = strchr(buf, 'i')) {
+		sscanf(ptr+1, "%d", &init_flag);
+	}
+		 
 	else {
-		sprintf(buf,"Error\n");
+		sprintf(buf,"TCS Transmition Error\n");
 		SetCtrlVal (panelHandle, PANEL_RECEIVELIST, buf);
 		return 0;
 	}
-    if (!sharedMemory)
-            return 0;
-       
+	
             // Sent message by updating shared memory
     if (bServerApp)
     {
@@ -699,6 +724,15 @@ int UploadServerToSHM(const char data[])
 			sharedMemory->tcs.cmd_y_d = decd ;
 			sharedMemory->tcs.cmd_y_m = decm ;
 			sharedMemory->tcs.cmd_y_s = decs ;
+			sharedMemory->tcs.cmd_go_flag = go_flag ;
+			sharedMemory->tcs.cmd_stop_flag = stop_flag ;
+			sharedMemory->tcs.cmd_park_flag = park_flag ;
+			sharedMemory->tcs.cmd_tcsinit_flag = tcsinit_flag ;
+			sharedMemory->tcs.cmd_init_flag = init_flag ;
+			
+			sprintf(text_buff, "go_flag: %1d stop_flag: %1d park_flag: %1d tcsinit_flag: %1d init_flag: %1d\n", go_flag, stop_flag, park_flag, tcsinit_flag, init_flag) ;
+			SetCtrlVal(panelHandle, PANEL_RECEIVELIST, text_buff) ;
+			
 		}
 /*
 //			currentLen = strlen(buffer);
