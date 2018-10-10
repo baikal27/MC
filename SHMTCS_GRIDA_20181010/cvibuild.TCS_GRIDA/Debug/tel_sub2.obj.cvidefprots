@@ -1,0 +1,16 @@
+[slew_track_radec]
+Class="Function"
+Prototype="int slew_track_radec(struct H_M_S target_ra, struct D_M_S target_dec);"
+
+[calpos_radec]
+Class="Function"
+Prototype="int calpos_radec(struct H_M_S ra_2000, struct D_M_S dec_2000, double *step_azi, double *step_alt);"
+
+[calpos_altazi]
+Class="Function"
+Prototype="int calpos_altazi(struct D_M_S alt, struct D_M_S azi, double *step_azi, double *step_alt);"
+
+[check_slew_track_altazi]
+Class="Function"
+Prototype="int check_slew_track_altazi(struct H_M_S target_ra, struct D_M_S target_dec);"
+

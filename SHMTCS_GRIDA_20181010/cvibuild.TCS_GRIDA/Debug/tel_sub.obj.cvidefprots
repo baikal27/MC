@@ -1,0 +1,56 @@
+[read_telescope_parameter]
+Class="Function"
+Prototype="int read_telescope_parameter();"
+
+[read_tcs_parameter]
+Class="Function"
+Prototype="int read_tcs_parameter();"
+
+[init_telescope_parameter]
+Class="Function"
+Prototype="int init_telescope_parameter();"
+
+[slew_to_hadec]
+Class="Function"
+Prototype="int slew_to_hadec(struct H_M_S ap_ha, struct D_M_S ap_dec);"
+
+[slew_to_radec]
+Class="Function"
+Prototype="int slew_to_radec(struct H_M_S ra_2000, struct D_M_S dec_2000);"
+
+[slew_to_altazi]
+Class="Function"
+Prototype="int slew_to_altazi(struct D_M_S alt, struct D_M_S azi);"
+
+[calc_expt]
+Class="Function"
+Prototype="double calc_expt(long steps, struct RAMP_DATA *ramp);"
+
+[correct_servo_ra]
+Class="Function"
+Prototype="int correct_servo_ra(struct H_M_S ra_2000, struct D_M_S dec_2000, long *count_ha, double *error_ha, double *track_speed);"
+
+[correct_servo_dec]
+Class="Function"
+Prototype="int correct_servo_dec(struct H_M_S ra_2000, struct D_M_S dec_2000, long *count_dec, double *error_dec);"
+
+[correct_servo_azi]
+Class="Function"
+Prototype="int correct_servo_azi(struct H_M_S ra_2000, struct D_M_S dec_2000, long *count_ha, double *error_ha, double *track_speed);"
+
+[correct_servo_alt]
+Class="Function"
+Prototype="int correct_servo_alt(struct H_M_S ra_2000, struct D_M_S dec_2000, long *count_dec, double *error_dec, double *track_speed);"
+
+[check_guiding]
+Class="Function"
+Prototype="int check_guiding();"
+
+[AGTIMER_CB]
+Class="Function"
+Prototype="int AGTIMER_CB(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[slew_to_home]
+Class="Function"
+Prototype="int slew_to_home();"
+
