@@ -4,6 +4,7 @@
 #include <cvirte.h>		
 #include <userint.h>
 #include <ansi_c.h>
+#include <windows.h> 
 #include <utility.h>
 #include "cvi_util.h"
 #include "shmtcs.h"
@@ -18,7 +19,6 @@
 #include "tel_sub2.h"	 // js made slew_track_radec, slew_track_altazi, calpos_radec, calpose_altazi functions
 
 #include <cvi2009compat.h>
-#include <windows.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <tcpsupp.h>
@@ -179,7 +179,7 @@ int main (int argc, char *argv[])
     sprintf(msgBuffer, "SHAREMEM TCS %s (Process ID:%8x)", 
         "TCS", 
         (int)GetCurrentProcessId() );									 // Getting a ProcessId
-    SetPanelAttribute (tel_Handle, ATTR_TITLE, msgBuffer);	
+    SetPanelAttribute (tel_handle, ATTR_TITLE, msgBuffer);	
 // Display UIR    
 	DisplayPanel (tel_handle);
 // Read input files
@@ -193,14 +193,14 @@ int main (int argc, char *argv[])
 // Claim this app is client
 	bServerApp = 0;
 // Set up SharedMemory Environment & lock, initializes it
-    SetupServerOrClient()
+    SetupServerOrClient() ;
 // Run TCS program
 	RunUserInterface ();
 // Cleanup for SharedMemory Environment & Handle
     CleanupServerOrClient();
     CloseMapping(&hMemMapFile, (void **)(&sharedMemory));
     CmtDiscardLock(lock);
-    DiscardPanel(tel_Handle);
+    DiscardPanel(tel_handle);
     
 Done:
     return 0;	

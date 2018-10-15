@@ -30,7 +30,7 @@ Save Changes Before Compiling = "Always"
 Hide Windows = False
 Break At First Statement = False
 Sort Type = "File Name"
-Number of Opened Files = 4
+Number of Opened Files = 5
 Window Confinement Region Enabled = True
 MainColumnWidth = 206
 FileDateColumnWidth = 70
@@ -184,12 +184,12 @@ Source Window State = "1,84,84,84,7,17,17,0,3,0,0,0,0,0,0,0,81,0,84,7,323,518,1,
 [File 0017]
 Path = "/d/MC/SHMTCS_GRIDA_processing/shmtcs.c"
 File Type = "CSource"
-Disk Date = 3622435714
+Disk Date = 3622436129
 In Projects = "1,"
 Window Top = 92
 Window Left = 42
-Window Z-Order = 2
-Source Window State = "1,233,233,233,3,19,19,0,0,83,0,0,0,0,0,25,133,0,36,21,349,536,1,0,"
+Window Z-Order = 1
+Source Window State = "1,20,20,20,0,21,21,0,0,224,0,0,0,0,0,41,0,0,6,21,349,536,1,0,"
 
 [File 0018]
 Path = "/d/MC/SHMTCS_GRIDA_processing/cal_lib/astrometry.h"
@@ -326,7 +326,7 @@ Window Top = 122
 Window Left = 58
 Window Height = 349
 Window Width = 638
-Window Z-Order = 4
+Window Z-Order = 5
 
 [File 0035]
 Path = "/d/MC/SHMTCS_GRIDA_processing/shm_client_copy.c"
@@ -335,8 +335,8 @@ Disk Date = 3621998547
 In Projects = ""
 Window Top = 32
 Window Left = 10
-Window Z-Order = 1
-Source Window State = "1,151,151,151,25,74,25,0,0,224,0,129,0,0,0,41,83,0,101,54,349,638,1,0,"
+Window Z-Order = 3
+Source Window State = "1,151,151,151,25,74,25,0,0,100,0,83,0,0,0,25,83,0,90,75,349,638,1,36,"
 
 [File 0036]
 Path = "/d/MC/SHMTCS_GRIDA_processing/shm_client_copy.uir"
@@ -347,7 +347,17 @@ Window Top = 62
 Window Left = 26
 Window Height = 349
 Window Width = 638
-Window Z-Order = 3
+Window Z-Order = 4
+
+[File 0037]
+Path = "/c/Program Files/National Instruments/CVI2013/sdk/include/Windows.h"
+File Type = "Include"
+Disk Date = 3455053200
+In Projects = ""
+Window Top = 152
+Window Left = 74
+Window Z-Order = 2
+Source Window State = "1,0,0,0,0,0,0,0,0,94,0,0,0,0,0,25,36,0,48,1,349,602,1,0,"
 
 [Default Build Config 0001 Debug]
 Generate Browse Info = True
