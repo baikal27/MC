@@ -1,0 +1,56 @@
+[cal_mount_model_radec]
+Class="Function"
+Prototype="int cal_mount_model_radec(int np_ra, int np_dec, int encoder_mode);"
+
+[cal_mount_model_altazi]
+Class="Function"
+Prototype="int cal_mount_model_altazi(int np_ra, int np_dec, int encoder_mode);"
+
+[calc_ha_count]
+Class="Function"
+Prototype="double calc_ha_count(double ha, double dec, double azi, double alt);"
+
+[calc_dec_count]
+Class="Function"
+Prototype="double calc_dec_count(double ha, double dec, double azi, double alt);"
+
+[calc_der_count]
+Class="Function"
+Prototype="double calc_der_count(double psi);"
+
+[calc_hadec]
+Class="Function"
+Prototype="int calc_hadec(double *ha, double *dec);"
+
+[calc_radec]
+Class="Function"
+Prototype="int calc_radec(double *ra, double *dec);"
+
+[calc_position1]
+Class="Function"
+Prototype="int calc_position1(long count_ha, long count_de, double *ha, double *dec);"
+
+[calc_mean_tracking_freq]
+Class="Function"
+Prototype="int calc_mean_tracking_freq(struct H_M_S ra_2000, struct D_M_S dec_2000);"
+
+[read_mount_model]
+Class="Function"
+Prototype="int read_mount_model(char *file_name);"
+
+[calc_error_count_radec]
+Class="Function"
+Prototype="void calc_error_count_radec(struct H_M_S ra, struct D_M_S dec, double *error_ha, double *error_dec);"
+
+[calc_error_count_altazi]
+Class="Function"
+Prototype="void calc_error_count_altazi(struct H_M_S ra, struct D_M_S dec, double *error_azi, double *error_alt);"
+
+[speed_to_freq]
+Class="Function"
+Prototype="double speed_to_freq(char caxis, double speed);"
+
+[freq_to_speed]
+Class="Function"
+Prototype="double freq_to_speed(char caxis, double freq);"
+

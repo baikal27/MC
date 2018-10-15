@@ -1,0 +1,50 @@
+-nologo
+-out:d:\MC\TCS_GRIDA_20180703_complete\cvibuild.SHMTCS_GRIDA\Debug\SHMTCS_GRIDA.exe
+-arch:x86
+-timestamp
+-debug:2
+-res:d:\MC\TCS_GRIDA_20180703_complete\cvibuild.SHMTCS_GRIDA\Debug\resources.res
+-entry:_CVIWinMainStartupCodeForDebugging@0
+-base:0x400000
+-linked:d:\MC\TCS_GRIDA_20180703_complete\cvibuild.SHMTCS_GRIDA\Debug\linkersummary.txt
+-dlldeps:d:\MC\TCS_GRIDA_20180703_complete\cvibuild.SHMTCS_GRIDA\Debug\dlldependencies.txt
+-licensing:d:\MC\TCS_GRIDA_20180703_complete\cvibuild.SHMTCS_GRIDA\Debug\linkerlicensing.txt
+-browsedeps:d:\MC\TCS_GRIDA_20180703_complete\cvibuild.SHMTCS_GRIDA\Debug\moduledependencies.txt
+-stackreserve:1048576
+-stackcommit:4096
+-in:d:\MC\TCS_GRIDA_20180703_complete\cvibuild.SHMTCS_GRIDA\Debug\cal_sub.obj
+-in:d:\MC\TCS_GRIDA_20180703_complete\cvibuild.SHMTCS_GRIDA\Debug\cpabtsub.obj
+-in:d:\MC\TCS_GRIDA_20180703_complete\cvibuild.SHMTCS_GRIDA\Debug\cvi_util.obj
+-in:d:\MC\TCS_GRIDA_20180703_complete\cvibuild.SHMTCS_GRIDA\Debug\jpl_sub.obj
+-in:d:\MC\TCS_GRIDA_20180703_complete\cvibuild.SHMTCS_GRIDA\Debug\mathsub.obj
+-in:d:\MC\TCS_GRIDA_20180703_complete\cvibuild.SHMTCS_GRIDA\Debug\shmtcs.obj
+-in:d:\MC\TCS_GRIDA_20180703_complete\cvibuild.SHMTCS_GRIDA\Debug\st4s_lib.obj
+-in:d:\MC\TCS_GRIDA_20180703_complete\cvibuild.SHMTCS_GRIDA\Debug\tel_sub.obj
+-in:d:\MC\TCS_GRIDA_20180703_complete\cvibuild.SHMTCS_GRIDA\Debug\tel_sub2.obj
+-more:c:\program files\national instruments\cvi2013\bin\msvc\cvistart.lib
+-more:c:\program files\national instruments\cvi2013\bin\msvc\cvi.lib
+-more:c:\program files\national instruments\cvi2013\sdk\lib\msvc\advapi32.lib
+-more:c:\ProgramData\National Instruments\CVI2013\bin\msvc\analysis.lib
+-more:d:\MC\TCS_GRIDA_20180703_complete\cal_lib\ASTROMETRY.lib
+-more:d:\MC\TCS_GRIDA_20180703_complete\AXLNet.lib
+-more:c:\Program Files\National Instruments\Shared\CVI\Bin\msvc\cvi_db.lib
+-more:c:\Program Files\National Instruments\CVI2013\bin\msvc\cviauto.lib
+-more:c:\Program Files\National Instruments\CVI2013\bin\msvc\cviddc.lib
+-more:c:\Program Files\National Instruments\CVI2013\bin\msvc\cvidotnet.lib
+-more:c:\Program Files\National Instruments\CVI2013\bin\msvc\cvinetstreams.lib
+-more:c:\Program Files\National Instruments\CVI2013\bin\msvc\cvinetv.lib
+-more:c:\Program Files\National Instruments\CVI2013\bin\msvc\cvintwrk.lib
+-more:c:\Program Files\National Instruments\CVI2013\bin\msvc\cvitdms.lib
+-more:c:\program files\national instruments\cvi2013\sdk\lib\msvc\gdi32.lib
+-more:c:\Program Files\National Instruments\CVI2013\bin\msvc\gpib.lib
+-more:c:\Program Files\National Instruments\Shared\CVI\Bin\msvc\ivi.lib
+-more:c:\program files\national instruments\cvi2013\sdk\lib\msvc\kernel32.lib
+-more:c:\Program Files\National Instruments\CVI2013\bin\msvc\nivxi.lib
+-more:c:\Program Files\National Instruments\CVI2013\bin\msvc\omp.lib
+-more:c:\Program Files\National Instruments\Shared\CVI\Bin\msvc\pid.lib
+-more:c:\Program Files\National Instruments\Shared\CVI\Bin\msvc\SPT.lib
+-more:c:\Program Files\National Instruments\CVI2013\toolslib\toolbox\msvc\toolbox.obj
+-more:c:\program files\national instruments\cvi2013\sdk\lib\msvc\user32.lib
+-more:c:\program files\national instruments\cvi2013\sdk\lib\msvc\uuid.lib
+-more:c:\Program Files\National Instruments\Shared\CVI\Bin\msvc\visa.lib
+-more:c:\program files\national instruments\cvi2013\sdk\lib\msvc\winmm.lib

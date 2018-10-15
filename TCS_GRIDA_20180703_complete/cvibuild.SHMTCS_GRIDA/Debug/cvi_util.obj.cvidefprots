@@ -1,0 +1,84 @@
+[turn_on_timer]
+Class="Function"
+Prototype="int turn_on_timer(int handle, int control);"
+
+[turn_off_timer]
+Class="Function"
+Prototype="int turn_off_timer(int handle, int control);"
+
+[set_timer_interval]
+Class="Function"
+Prototype="int set_timer_interval(int handle, int control, double interval);"
+
+[close_stdio]
+Class="Function"
+Prototype="void close_stdio();"
+
+[open_stdio]
+Class="Function"
+Prototype="void open_stdio();"
+
+[set_panel_title]
+Class="Function"
+Prototype="int set_panel_title(int handle, char *title);"
+
+[set_control_visible]
+Class="Function"
+Prototype="int set_control_visible(int panel_handle, int control);"
+
+[set_control_hidden]
+Class="Function"
+Prototype="int set_control_hidden(int panel_handle, int control);"
+
+[copy_panel_to_clipboard]
+Class="Function"
+Prototype="int copy_panel_to_clipboard(int panel);"
+
+[copy_active_control_to_clipboard]
+Class="Function"
+Prototype="int copy_active_control_to_clipboard(int panel);"
+
+[set_control_dim]
+Class="Function"
+Prototype="int set_control_dim(int handle, int control);"
+
+[set_control_undim]
+Class="Function"
+Prototype="int set_control_undim(int handle, int control);"
+
+[auto_plot_xy]
+Class="Function"
+Prototype="int auto_plot_xy(int plot_handle, int control, double *x, double *y, int ndata, int type);"
+
+[auto_plot_xy_scatter]
+Class="Function"
+Prototype="int auto_plot_xy_scatter(int plot_handle, int control, double *x, double *y, int ndata);"
+
+[auto_plot_xy_line]
+Class="Function"
+Prototype="int auto_plot_xy_line(int plot_handle, int control, double *x, double *y, int ndata);"
+
+[set_on_color]
+Class="Function"
+Prototype="int set_on_color(int panel, int control);"
+
+[file_select]
+Class="Function"
+Prototype="int file_select(char *file_ext, char *file_name);"
+
+[dir_select]
+Class="Function"
+Prototype="int dir_select(char *default_dir, char *dirname);"
+
+[del_dir]
+Class="Function"
+Prototype="int del_dir(char *dirfname, char *fname);"
+
+[get_fbody]
+Class="Function"
+Prototype="int get_fbody(char *fname, char *fbody);"
+
+[get_dir]
+Class="Function"
+Prototype="int get_dir(char *fname, char *dir);"
+

@@ -1,0 +1,58 @@
+CCFLAGS = -g ;
+TargetFileVersion = "1.0.0.0" ;
+TargetProdVersion = "1.0.0.0" ;
+HDRS = 	"c:\\program files\\national instruments\\cvi2013\\include"
+	"C:\\Program Files\\National Instruments\\Shared\\CVI\\include"
+	"C:\\ProgramData\\National Instruments\\CVI2013\\include"
+	"C:\\ProgramData\\National Instruments\\CVI\\include"
+	"c:\\program files\\national instruments\\cvi2013\\include\\ansi"
+	"c:\\program files\\national instruments\\cvi2013\\include\\clang\\2.9"
+	"C:\\Program Files\\IVI Foundation\\IVI\\Include"
+	"C:\\Program Files\\IVI Foundation\\VISA\\winnt\\include"
+	"c:\\program files\\national instruments\\cvi2013\\sdk\\include"
+	"d:\\MC\\SHMTCS_GRIDA_processing"
+	"c:\\program files\\national instruments\\cvi2013\\toolslib\\activex\\word"
+	"c:\\program files\\national instruments\\cvi2013\\toolslib\\activex\\excel"
+	"c:\\program files\\national instruments\\cvi2013\\toolslib\\custctrl"
+	"c:\\program files\\national instruments\\cvi2013\\toolslib\\custctrl\\custsupp"
+	"c:\\program files\\national instruments\\cvi2013\\toolslib\\cvirtsup"
+	"c:\\program files\\national instruments\\cvi2013\\toolslib\\datasock"
+	"c:\\program files\\national instruments\\cvi2013\\toolslib\\daqUtil"
+	"c:\\program files\\national instruments\\cvi2013\\toolslib\\printing"
+	"c:\\program files\\national instruments\\cvi2013\\toolslib\\toolbox"
+	"c:\\program files\\national instruments\\cvi2013\\toolslib\\reportgen"
+	"c:\\program files\\national instruments\\cvi2013\\toolslib\\localui"
+	"c:\\program files\\national instruments\\cvi2013\\instr"
+	"C:\\Program Files\\National Instruments\\Shared\\CVI\\toolslib\\custctrl"
+	"C:\\Program Files\\National Instruments\\Shared\\CVI\\toolslib\\custctrl\\custsupp"
+	"C:\\Program Files\\National Instruments\\Shared\\CVI\\instr"
+	"C:\\ProgramData\\National Instruments\\CVI2013\\instr"
+	"c:\\Program Files\\National Instruments\\CVI2013\\bin"
+	"c:\\ProgramData\\National Instruments\\CVI2013\\bin"
+	"c:\\Program Files\\National Instruments\\Shared\\CVI\\Bin"
+	"d:\\MC\\SHMTCS_GRIDA_processing\\cal_lib"
+	;
+include Jamfile_instr ;
+Object "d:\\MC\\SHMTCS_GRIDA_processing\\cvibuild.SHMTCS_GRIDA\\Debug\\cal_sub.obj" : "d:\\MC\\SHMTCS_GRIDA_processing\\cal_sub.c" ;
+PrjObjects += "d:\\MC\\SHMTCS_GRIDA_processing\\cvibuild.SHMTCS_GRIDA\\Debug\\cal_sub.obj" ;
+Object "d:\\MC\\SHMTCS_GRIDA_processing\\cvibuild.SHMTCS_GRIDA\\Debug\\cpabtsub.obj" : "d:\\MC\\SHMTCS_GRIDA_processing\\cal_lib\\cpabtsub.c" ;
+PrjObjects += "d:\\MC\\SHMTCS_GRIDA_processing\\cvibuild.SHMTCS_GRIDA\\Debug\\cpabtsub.obj" ;
+Object "d:\\MC\\SHMTCS_GRIDA_processing\\cvibuild.SHMTCS_GRIDA\\Debug\\cvi_util.obj" : "d:\\MC\\SHMTCS_GRIDA_processing\\cvi_util.c" ;
+PrjObjects += "d:\\MC\\SHMTCS_GRIDA_processing\\cvibuild.SHMTCS_GRIDA\\Debug\\cvi_util.obj" ;
+Object "d:\\MC\\SHMTCS_GRIDA_processing\\cvibuild.SHMTCS_GRIDA\\Debug\\jpl_sub.obj" : "d:\\MC\\SHMTCS_GRIDA_processing\\cal_lib\\jpl_sub.c" ;
+PrjObjects += "d:\\MC\\SHMTCS_GRIDA_processing\\cvibuild.SHMTCS_GRIDA\\Debug\\jpl_sub.obj" ;
+Object "d:\\MC\\SHMTCS_GRIDA_processing\\cvibuild.SHMTCS_GRIDA\\Debug\\mathsub.obj" : "d:\\MC\\SHMTCS_GRIDA_processing\\cal_lib\\mathsub.c" ;
+PrjObjects += "d:\\MC\\SHMTCS_GRIDA_processing\\cvibuild.SHMTCS_GRIDA\\Debug\\mathsub.obj" ;
+Object "d:\\MC\\SHMTCS_GRIDA_processing\\cvibuild.SHMTCS_GRIDA\\Debug\\shmtcs.obj" : "d:\\MC\\SHMTCS_GRIDA_processing\\shmtcs.c" ;
+PrjObjects += "d:\\MC\\SHMTCS_GRIDA_processing\\cvibuild.SHMTCS_GRIDA\\Debug\\shmtcs.obj" ;
+Object "d:\\MC\\SHMTCS_GRIDA_processing\\cvibuild.SHMTCS_GRIDA\\Debug\\st4s_lib.obj" : "d:\\MC\\SHMTCS_GRIDA_processing\\st4s_lib.c" ;
+PrjObjects += "d:\\MC\\SHMTCS_GRIDA_processing\\cvibuild.SHMTCS_GRIDA\\Debug\\st4s_lib.obj" ;
+Object "d:\\MC\\SHMTCS_GRIDA_processing\\cvibuild.SHMTCS_GRIDA\\Debug\\tel_sub.obj" : "d:\\MC\\SHMTCS_GRIDA_processing\\tel_sub.c" ;
+PrjObjects += "d:\\MC\\SHMTCS_GRIDA_processing\\cvibuild.SHMTCS_GRIDA\\Debug\\tel_sub.obj" ;
+Object "d:\\MC\\SHMTCS_GRIDA_processing\\cvibuild.SHMTCS_GRIDA\\Debug\\tel_sub2.obj" : "d:\\MC\\SHMTCS_GRIDA_processing\\tel_sub2.c" ;
+PrjObjects += "d:\\MC\\SHMTCS_GRIDA_processing\\cvibuild.SHMTCS_GRIDA\\Debug\\tel_sub2.obj" ;
+Object resources.res : resources.in.rc ;
+MainFromObjects "SHMTCS_GRIDA.exe" : $(PrjObjects) $(InstrObjects) ;
+Depends "SHMTCS_GRIDA.exe" : link_options.txt ;
+Depends "SHMTCS_GRIDA.exe" : resources.res ;
+Depends all : "SHMTCS_GRIDA.exe" ;

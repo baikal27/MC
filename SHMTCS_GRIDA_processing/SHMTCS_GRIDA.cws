@@ -1,0 +1,484 @@
+[Workspace Header]
+Version = 1300
+Pathname = "/d/MC/SHMTCS_GRIDA_processing/SHMTCS_GRIDA.cws"
+CVI Dir = "/c/program files/national instruments/cvi2013"
+CVI Shared Dir = "/C/Program Files/National Instruments/Shared/CVI"
+CVI Pub Local Dir = "/C/ProgramData/National Instruments/CVI2013"
+CVI Pub Global Dir = "/C/ProgramData/National Instruments/CVI"
+IVI Standard Root Dir = "/C/Program Files/IVI Foundation/IVI"
+IVI Standard Root 64-bit Dir = "/C/Program Files/IVI Foundation/IVI"
+VXIplug&play Framework Dir = "/C/Program Files/IVI Foundation/VISA/winnt"
+VXIplug&play Framework 64-bit Dir = "/C/Program Files/IVI Foundation/VISA/win64"
+Number of Projects = 1
+Active Project = 1
+Project 0001 = "SHMTCS_GRIDA.prj"
+Drag Bar Left = 223
+Window Top = 92
+Window Left = 169
+Window Bottom = 914
+Window Right = 1113
+Maximized = True
+Maximized Children = True
+Max32 Number Of Errors = 20
+Track Include File Dependencies = True
+Prompt For Missing Includes = True
+Stop On First Error File = False
+Bring Up Err Win At Start = True
+Bring Up Err Win For Errors = False
+Save Changes Before Running = "Always"
+Save Changes Before Compiling = "Always"
+Hide Windows = False
+Break At First Statement = False
+Sort Type = "File Name"
+Number of Opened Files = 4
+Window Confinement Region Enabled = True
+MainColumnWidth = 206
+FileDateColumnWidth = 70
+FileSizeColumnWidth = 70
+
+[Project Header 0001]
+Version = 1300
+Don't Update DistKit = False
+Platform Code = 4
+Build Configuration = "Debug"
+Warn User If Debugging Release = 1
+Batch Build Release = False
+Batch Build Debug = False
+
+[File 0001]
+Path = "/d/MC/SHMTCS_GRIDA_processing/cal_lib/mathsub.h"
+File Type = "Include"
+Disk Date = 3621810991
+In Projects = "1,"
+Window Top = 212
+Window Left = 106
+Source Window State = "1,2,2,2,67,72,72,0,3,96,0,0,0,0,0,25,0,0,2,67,349,614,1,0,"
+
+[File 0002]
+Path = "/d/MC/SHMTCS_GRIDA_processing/st4s_lib.c"
+File Type = "CSource"
+Disk Date = 3621810992
+In Projects = "1,"
+Window Top = 32
+Window Left = 10
+Source Window State = "1,442,442,442,8,23,23,0,3,96,0,0,0,0,0,25,416,0,442,8,349,614,1,0,"
+
+[File 0003]
+Path = "/d/MC/SHMTCS_GRIDA_processing/tel_sub.c"
+File Type = "CSource"
+Disk Date = 3622003046
+In Projects = "1,"
+Window Top = 62
+Window Left = 26
+Source Window State = "1,244,244,244,4,19,19,0,3,96,0,0,0,0,0,25,209,0,244,4,349,614,1,0,"
+
+[File 0004]
+Path = "/d/MC/SHMTCS_GRIDA_processing/tel_sub2.c"
+File Type = "CSource"
+Disk Date = 3621810992
+In Projects = "1,"
+Window Top = 30
+Source Window State = "1,41,41,41,4,20,20,0,0,94,0,0,0,0,0,28,0,0,10,182,400,600,1,0,"
+
+[File 0005]
+Path = "/d/MC/SHMTCS_GRIDA_processing/st4s_lib.h"
+File Type = "Include"
+Disk Date = 3621810992
+In Projects = "1,"
+Window Top = 182
+Window Left = 90
+Source Window State = "1,22,22,22,0,48,0,0,0,96,0,0,0,0,0,25,0,0,24,6,349,614,1,0,"
+
+[File 0006]
+Path = "/d/MC/SHMTCS_GRIDA_processing/tel_sub2.h"
+File Type = "Include"
+Disk Date = 3621810992
+In Projects = "1,"
+Window Top = 242
+Window Left = 122
+Source Window State = "1,3,3,3,4,20,20,0,3,96,0,0,0,0,0,25,0,0,3,4,349,614,1,0,"
+
+[File 0007]
+Path = "/d/MC/SHMTCS_GRIDA_processing/cal_sub.c"
+File Type = "CSource"
+Disk Date = 3621810991
+In Projects = "1,"
+Window Top = 32
+Window Left = 10
+Source Window State = "1,10,10,10,12,27,27,0,3,96,0,0,0,0,0,25,0,0,10,12,349,614,1,0,"
+
+[File 0008]
+Path = "/d/MC/SHMTCS_GRIDA_processing/AXD.h"
+File Type = "Include"
+Disk Date = 3621810991
+In Projects = "1,"
+Window Top = 272
+Window Left = 138
+Source Window State = "1,0,0,0,0,0,0,0,0,80,0,0,0,0,0,25,91,0,0,0,349,518,1,0,"
+
+[File 0009]
+Path = "/d/MC/SHMTCS_GRIDA_processing/AXM.h"
+File Type = "Include"
+Disk Date = 3621810991
+In Projects = "1,"
+Window Top = 32
+Window Left = 10
+Source Window State = "1,278,279,278,0,0,0,0,3,120,0,0,0,0,0,25,0,0,278,43,349,758,1,0,"
+
+[File 0010]
+Path = "/d/MC/SHMTCS_GRIDA_processing/gv_tel.h"
+File Type = "Include"
+Disk Date = 3621810992
+In Projects = "1,"
+Window Top = 212
+Window Left = 106
+Source Window State = "1,52,52,52,7,21,21,0,3,96,0,0,0,0,0,25,40,0,52,7,349,614,1,0,"
+
+[File 0011]
+Path = "/d/MC/SHMTCS_GRIDA_processing/cal_lib/cpabtsub.c"
+File Type = "CSource"
+Disk Date = 3621810991
+In Projects = "1,"
+Window Top = 30
+Source Window State = "1,53,53,53,5,14,14,0,3,94,0,0,0,0,0,28,267,0,53,5,400,600,1,0,"
+
+[File 0012]
+Path = "/d/MC/SHMTCS_GRIDA_processing/cvi_util.c"
+File Type = "CSource"
+Disk Date = 3621810991
+In Projects = "1,"
+Window Top = 62
+Window Left = 26
+Source Window State = "1,40,40,40,4,17,17,0,0,96,0,0,0,0,0,20,18,0,31,57,284,614,1,0,"
+
+[File 0013]
+Path = "/d/MC/SHMTCS_GRIDA_processing/cal_lib/ASTROMETRY.lib"
+File Type = "Library"
+Disk Date = 3621810991
+In Projects = "1,"
+
+[File 0014]
+Path = "/d/MC/SHMTCS_GRIDA_processing/AXLNet.lib"
+File Type = "Library"
+Disk Date = 3621810991
+In Projects = "1,"
+
+[File 0015]
+Path = "/d/MC/SHMTCS_GRIDA_processing/cal_lib/jpl_sub.c"
+File Type = "CSource"
+Disk Date = 3621810991
+In Projects = "1,"
+Window Top = 62
+Window Left = 26
+Source Window State = "1,540,541,540,0,0,0,0,0,0,0,0,0,0,0,0,472,0,537,29,323,518,1,0,"
+
+[File 0016]
+Path = "/d/MC/SHMTCS_GRIDA_processing/cal_lib/mathsub.c"
+File Type = "CSource"
+Disk Date = 3621810991
+In Projects = "1,"
+Window Top = 32
+Window Left = 10
+Source Window State = "1,84,84,84,7,17,17,0,3,0,0,0,0,0,0,0,81,0,84,7,323,518,1,0,"
+
+[File 0017]
+Path = "/d/MC/SHMTCS_GRIDA_processing/shmtcs.c"
+File Type = "CSource"
+Disk Date = 3622435714
+In Projects = "1,"
+Window Top = 92
+Window Left = 42
+Window Z-Order = 2
+Source Window State = "1,233,233,233,3,19,19,0,0,83,0,0,0,0,0,25,133,0,36,21,349,536,1,0,"
+
+[File 0018]
+Path = "/d/MC/SHMTCS_GRIDA_processing/cal_lib/astrometry.h"
+File Type = "Include"
+Disk Date = 3621810991
+In Projects = "1,"
+Window Top = 32
+Window Left = 10
+Source Window State = "1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,96,349,614,1,0,"
+
+[File 0019]
+Path = "/d/MC/SHMTCS_GRIDA_processing/AXHS.h"
+File Type = "Include"
+Disk Date = 3621810991
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0020]
+Path = "/d/MC/SHMTCS_GRIDA_processing/AXL.h"
+File Type = "Include"
+Disk Date = 3621810991
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0021]
+Path = "/d/MC/SHMTCS_GRIDA_processing/AXLNet.dll"
+File Type = "DLL"
+Disk Date = 3621810991
+In Projects = "1,"
+
+[File 0022]
+Path = "/d/MC/SHMTCS_GRIDA_processing/cal_lib/cpabtsub.h"
+File Type = "Include"
+Disk Date = 3621810991
+In Projects = "1,"
+Window Top = 182
+Window Left = 90
+Source Window State = "1,33,33,33,7,14,14,0,3,0,0,0,0,0,0,0,21,0,33,7,349,614,1,0,"
+
+[File 0023]
+Path = "/d/MC/SHMTCS_GRIDA_processing/cvi_util.h"
+File Type = "Include"
+Disk Date = 3621810991
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0024]
+Path = "/d/MC/SHMTCS_GRIDA_processing/EzBasicAxlNet.dll"
+File Type = "DLL"
+Disk Date = 3621810991
+In Projects = "1,"
+
+[File 0025]
+Path = "/d/MC/SHMTCS_GRIDA_processing/initiation.h"
+File Type = "Include"
+Disk Date = 0
+In Projects = "1,"
+Window Top = 32
+Window Left = 10
+Source Window State = "1,38,38,38,9,22,22,0,3,0,0,52,0,0,0,0,37,0,38,9,284,614,1,0,"
+
+[File 0026]
+Path = "/d/MC/SHMTCS_GRIDA_processing/cal_lib/jpl_define.h"
+File Type = "Include"
+Disk Date = 3621810991
+In Projects = "1,"
+Window Top = 92
+Window Left = 42
+Source Window State = "1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,323,518,1,0,"
+
+[File 0027]
+Path = "/d/MC/SHMTCS_GRIDA_processing/cal_lib/jpl_sub.h"
+File Type = "Include"
+Disk Date = 3621810991
+In Projects = "1,"
+Window Top = 92
+Window Left = 42
+Source Window State = "1,1,1,1,5,13,13,0,3,0,0,0,0,0,0,0,0,0,1,5,349,614,1,0,"
+
+[File 0028]
+Path = "/d/MC/SHMTCS_GRIDA_processing/cal_lib/orbit_sub.h"
+File Type = "Include"
+Disk Date = 3621810991
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0029]
+Path = "/d/MC/SHMTCS_GRIDA_processing/cal_lib/read_cat_sub.h"
+File Type = "Include"
+Disk Date = 3621810991
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0030]
+Path = "/d/MC/SHMTCS_GRIDA_processing/shmtcs.h"
+File Type = "Include"
+Disk Date = 3621810992
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0031]
+Path = "/d/MC/SHMTCS_GRIDA_processing/cal_lib/ssbsub.h"
+File Type = "Include"
+Disk Date = 3621810991
+In Projects = "1,"
+Window Top = 32
+Window Left = 10
+Source Window State = "1,0,0,0,5,11,11,0,3,0,0,0,0,0,0,0,0,0,0,5,349,614,1,0,"
+
+[File 0032]
+Path = "/d/MC/SHMTCS_GRIDA_processing/tel_sub.h"
+File Type = "Include"
+Disk Date = 3621810992
+In Projects = "1,"
+Window Top = 62
+Window Left = 26
+Source Window State = "1,4,4,4,4,28,28,0,3,0,0,0,0,0,0,0,0,0,4,4,349,758,1,0,"
+
+[File 0033]
+Path = "/d/MC/SHMTCS_GRIDA_processing/type_def.h"
+File Type = "Include"
+Disk Date = 3621810992
+In Projects = "1,"
+Window Top = 62
+Window Left = 26
+Source Window State = "1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8,0,15,137,349,614,1,0,"
+
+[File 0034]
+Path = "/d/MC/SHMTCS_GRIDA_processing/shmtcs.uir"
+File Type = "User Interface Resource"
+Disk Date = 3621810992
+In Projects = "1,"
+Window Top = 122
+Window Left = 58
+Window Height = 349
+Window Width = 638
+Window Z-Order = 4
+
+[File 0035]
+Path = "/d/MC/SHMTCS_GRIDA_processing/shm_client_copy.c"
+File Type = "CSource"
+Disk Date = 3621998547
+In Projects = ""
+Window Top = 32
+Window Left = 10
+Window Z-Order = 1
+Source Window State = "1,151,151,151,25,74,25,0,0,224,0,129,0,0,0,41,83,0,101,54,349,638,1,0,"
+
+[File 0036]
+Path = "/d/MC/SHMTCS_GRIDA_processing/shm_client_copy.uir"
+File Type = "User Interface Resource"
+Disk Date = 3621810990
+In Projects = ""
+Window Top = 62
+Window Left = 26
+Window Height = 349
+Window Width = 638
+Window Z-Order = 3
+
+[Default Build Config 0001 Debug]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Batch Build = False
+Profile = "Disabled"
+Debugging Level = "Standard"
+Execution Trace = "Disabled"
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+External Process Path = ""
+
+[Default Build Config 0001 Release]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Batch Build = False
+Profile = "Disabled"
+Debugging Level = "Standard"
+Execution Trace = "Disabled"
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+External Process Path = ""
+
+[Default Build Config 0001 Debug64]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Batch Build = False
+Profile = "Disabled"
+Debugging Level = "Standard"
+Execution Trace = "Disabled"
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+External Process Path = ""
+
+[Default Build Config 0001 Release64]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Batch Build = False
+Profile = "Disabled"
+Debugging Level = "Standard"
+Execution Trace = "Disabled"
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+External Process Path = ""
+
+[Build Dependencies 0001]
+Number of Dependencies = 0
+
+[Build Options 0001]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Execution Trace = "Disabled"
+Profile = "Disabled"
+Debugging Level = "Standard"
+Break On Library Errors = True
+Break On First Chance Exceptions = False
+
+[Execution Target 0001]
+Execution Target Address = "Local desktop computer"
+Execution Target Port = 0
+Execution Target Type = 0
+
+[SCC Options 0001]
+Use global settings = True
+SCC Provider = ""
+SCC Project = ""
+Local Path = ""
+Auxiliary Path = ""
+Perform Same Action For .h File As For .uir File = "Ask"
+Perform Same Action For .cds File As For .prj File = "Ask"
+Username = ""
+Comment = ""
+Use Default Username = False
+Use Default Comment = False
+Suppress CVI Error Messages = False
+Always show confirmation dialog = True
+
+[DLL Debugging Support 0001]
+External Process Path = ""
+
+[Command Line Args 0001]
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+
+[Watch 1]
+Watch Expression = "ev"
+
+[Watch 2]
+Watch Expression = "stor"
+
+[Watch 3]
+Watch Expression = "geterv"
+
+[Watch 4]
+Watch Expression = "ev"
+
+[Watch 5]
+Watch Expression = "stor"
+
+[Watch 6]
+Watch Expression = "geterv"
+
+[Watch 7]
+Watch Expression = "ev"
+
+[Watch 8]
+Watch Expression = "stor"
+
+[Watch 9]
+Watch Expression = "geterv"
+
+[Watch 10]
+Watch Expression = "ra_2000"
+
+[Watch 11]
+Watch Expression = "ra_2000"
+
+[Watch 12]
+Watch Expression = "return"
+
+[Watch 13]
+Watch Expression = "velocity"
+
+[Watch 14]
+Watch Expression = "d_azi"
+
+[Watch 15]
+Watch Expression = "d_alt"
+

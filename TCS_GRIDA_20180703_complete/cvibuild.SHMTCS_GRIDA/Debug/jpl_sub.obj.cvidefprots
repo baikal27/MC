@@ -1,0 +1,16 @@
+[init_jpl]
+Class="Function"
+Prototype="int init_jpl(char *fname);"
+
+[close_jpl]
+Class="Function"
+Prototype="int close_jpl();"
+
+[constanold]
+Class="Function"
+Prototype="void constanold(char (*nam)[6], double *val, double *sss, int *n);"
+
+[pleph]
+Class="Function"
+Prototype="void pleph(double et, int ntarg, int ncent, double *rrd);"
+
