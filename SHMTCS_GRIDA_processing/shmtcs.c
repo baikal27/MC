@@ -25,7 +25,7 @@
 #include <string.h>
 
 /*---------------------------------------------------------------------------*/
-/* Macros for SharedMemory                             */
+/* Macros for SharedMemory                          					     */
 /*---------------------------------------------------------------------------*/
 #define MAXCLIENTS 10
 #define CLIENT_RECEIVE_BUFFER_SIZE 1024
@@ -82,7 +82,7 @@ static int panelHandle;
 static CmtThreadLockHandle lock = 0;
 static HANDLE hMemMapFile = 0;
 static int clientIndex    = -1;
-static int bServerApp     = 0;
+static int bServerApp     = 0;												  // THIS IS THE SHAREDMEMORY CLIENT
 static DWORD dwWaitResult = 0;
 static tSharedMemType *sharedMemory = NULL;
 static char msgBuffer[256];
@@ -152,6 +152,14 @@ int set_axis_para(long laxis) ;
 int read_nodeno(void);
 
 static int display_tel_status(void);
+
+/*---------------------------------------------------------------------------*/
+/* Module-globals for TCP/IP                                                 */
+/*---------------------------------------------------------------------------*/
+static unsigned int tcp_hconversation;
+static int			g_TCPError = 0;
+static int      	portNum;
+static int		 	tcp_registered = 0;
 																			  
 /*---------------------------------------------------------------------------*/
 /* Main	Function															 */
@@ -187,11 +195,11 @@ int main (int argc, char *argv[])
 // open JPL ephmeris calculation
 	init_jpl("d:\\TCS_GRIDA_20180403\\cal_lib\\Jpleph.dos");
 // Set up the timer in UIR	
-	turn_on_timer(tel_handle, PANEL_TIMER);
-	set_timer_interval(tel_handle, PANEL_TIMER, SERVO_UPDATE_SEC);
+	turn_on_timer(tel_handle, PANEL_APPLY_TIMER);
+	set_timer_interval(tel_handle, PANEL_APPLY_TIMER, SERVO_UPDATE_SEC);
 
 // Claim this app is client
-	bServerApp = 0;
+//	bServerApp = 0;
 // Set up SharedMemory Environment & lock, initializes it
     SetupServerOrClient() ;
 // Run TCS program
@@ -228,29 +236,236 @@ int CVICALLBACK Panel_Proc (int panel, int event, void *callbackData,
 	return 0;
 }
 
+//----------------------------------------------------------------------------
+// SetupServerOrClient - Sets up shared memory and lock and initializes it
+//----------------------------------------------------------------------------
+int SetupServerOrClient(void)
+{
+    int success = 0;
+    int i;
+    int alreadyExist;
+	char    tempBuf[256] = {0};
+	char	portBuf[31];
+    
+    if (CmtNewLock(LOCK_NAME, OPT_TL_PROCESS_EVENTS_WHILE_WAITING, &lock) != 0)
+    {
+    	if (bServerApp)
+    		MessagePopup("Server Error", "Failed to create Server lock.");
+    	else
+    		MessagePopup("Client Error", "Failed to create Client lock.");
+    	goto Done;
+    }
+        
+	// Create or open shared memory    
+    if (!(sharedMemory = CreateOrOpenMapFile(&hMemMapFile, MEMORY_NAME, bServerApp, SHARED_MEMORY_SIZE, &alreadyExist)))
+    {
+        if (bServerApp) {
+            MessagePopup("Server Error","Failed to create Server shared memory.");
+			CmtReleaseLock(lock);
+		}
+        else
+			MessagePopup("Client Error","Server is not running.");
+        goto Done;
+    }
+        
+	// Initialize shared memory if creator, and release lock
+    if (sharedMemory)
+    {
+		// If client initialize client area 
+        if (!bServerApp) 
+        {
+        	CmtGetLock(lock);
+
+            // Increment counter in shared memory
+           	sharedMemory->tcsConnected = 1;
+           	sharedMemory->tcs.tcsProcessID = GetCurrentProcessId();
+           	sharedMemory->tcs.tcsReceiveBuffer[0] = 0;
+			clientIndex++;
+           	success = 1;			
+			SetCtrlVal (tel_handle, PANEL_SHM_CONNECTED, sharedMemory->tcsConnected);
+			CmtReleaseLock(lock);
+        }
+    }
+    
+Done:
+    return success;
+}
+
+//----------------------------------------------------------------------------
+// CleanupServerOrClient - Cleanup shared memory entry for server or client
+//----------------------------------------------------------------------------
+int CleanupServerOrClient(void)
+{
+    int success = 0;
+   
+    CmtGetLock(lock);
+	if (sharedMemory)
+    {
+        if (bServerApp)
+        {
+            sharedMemory->serverRunning = 0;
+        }
+        else if (clientIndex>=0) 
+        {
+            sharedMemory->tcs.tcsProcessID = 0;
+            sharedMemory->tcsConnected = 0;
+			SetCtrlVal (tel_handle, PANEL_SHM_CONNECTED, sharedMemory->tcsConnected);
+        }
+        
+        success = 1;
+    }
+    CmtReleaseLock(lock);
+
+    return success;
+}
+
+//----------------------------------------------------------------------------
+// CreateOrOpenMapFile
+//----------------------------------------------------------------------------
+tSharedMemType *CreateOrOpenMapFile(HANDLE *hMemMapFile, char *mapName, int create, int size, int *alreadyExist)
+{
+    void *memPtr = NULL;
+ 
+    if (hMemMapFile) 
+    { 
+        if (create)
+        {
+            // CreateFileMapping
+            *hMemMapFile = CreateFileMapping(
+                INVALID_HANDLE_VALUE, 
+                NULL, 
+                PAGE_READWRITE, 
+                (DWORD)(size>>16), 
+                (DWORD)(size & 0xFFFFFFFF),
+                mapName);
+        } 
+        else 
+        {        
+            *hMemMapFile = OpenFileMapping(
+                FILE_MAP_ALL_ACCESS, 
+                FALSE, 
+                mapName);
+
+        }
+        if (*hMemMapFile == NULL) 
+            return 0;
+        else 
+        {
+            if (alreadyExist) 
+            {
+                if (create)
+                     *alreadyExist = (GetLastError()==ERROR_ALREADY_EXISTS);
+                else *alreadyExist = 1;
+            }    
+        
+            // Map to memory
+            memPtr = (LPSTR)MapViewOfFile(*hMemMapFile, FILE_MAP_ALL_ACCESS, 0, 0, 0);
+            return memPtr;
+        }    
+    } 
+    else return 0;
+}
+
+//----------------------------------------------------------------------------
+// CloseMapping
+//----------------------------------------------------------------------------
+int CloseMapping(HANDLE *hMemMapFile, void **memPtr)
+{
+    // Unmap Memory
+    if (memPtr) 
+    {
+        UnmapViewOfFile(*memPtr);
+        *memPtr = 0;
+    }    
+    
+    // Close Mapping
+    if (hMemMapFile)
+    {
+        CloseHandle(*hMemMapFile);
+        *hMemMapFile = 0;
+    }
+    return 1;
+}
+
 /*---------------------------------------------------------------------------*/
 /* Callback Function of APPLY												 */
 /*---------------------------------------------------------------------------*/
-int CVICALLBACK APPLY (int panel, int control, int event, 
+int CVICALLBACK APPLY_TIMER (int panel, int control, int event, 
 					   void *callbackData, int eventData1, int eventData2)
 {
+	int pre_park_flag = 0;
+	int pre_init_flag = 0;
+	int pre_stop_flag = 0;
+	int pre_goto_flag = 0;
+	int pre_tcsinit_flag = 0;
+	
 	switch (event) {
-		case EVENT_COMMIT:
-			if (control == PANEL_PARK) start_parking();
-			if (control == PANEL_INIT) start_init();
-			if (control == PANEL_STOP)
-			{
-				if (TELESCOPE_MODE == TEL_MODE_PARK)
+		case EVENT_TIMER_TICK:
+			
+			if (!sharedMemory) return 0 ;
+	
+			CmtGetLock(lock);
+           	
+			if (sharedMemory->tcs.cmd_park_flag)
+			{																				
+				if (sharedMemory->tcs.cmd_park_flag != pre_park_flag)
 				{
-					AxmHomeSetResult(0, HOME_SUCCESS); AxmHomeSetResult(1, HOME_SUCCESS);
+					start_parking();
 				}
-				STOP_TELESCOPE() ;
 			}
+			pre_park_flag = sharedMemory->tcs.cmd_park_flag;
 			
-			else if (control == PANEL_GOTO) goto_target(); 
+			if (sharedMemory->tcs.cmd_tcsinit_flag)
+			{
+				if (sharedMemory->tcs.cmd_tcsinit_flag != pre_tcsinit_flag)
+				{
+					start_inittcs();
+				}
+			}
+			pre_tcsinit_flag = sharedMemory->tcs.cmd_tcsinit_flag;
 			
-			else if (control == PANEL_TCSINIT) start_inittcs(); 
+			if (sharedMemory->tcs.cmd_init_flag)
+			{
+				if (sharedMemory->tcs.cmd_init_flag != pre_init_flag)
+				{
+					start_init();
+				}
+			}
+			pre_init_flag = sharedMemory->tcs.cmd_init_flag;
 			
+			if (sharedMemory->tcs.cmd_go_flag)
+			{
+				if (sharedMemory->tcs.cmd_go_flag != pre_goto_flag)
+				{
+					turn_on_timer(tel_handle, PANEL_TRACKING_TIMER);
+					set_timer_interval(tel_handle, PANEL_TRACKING_TIMER, SERVO_UPDATE_SEC);
+					goto_target();
+				}
+			}
+			else
+			{
+				if (sharedMemory->tcs.cmd_go_flag != pre_goto_flag)
+				{
+					turn_off_timer(tel_handle, PANEL_TRACKING_TIMER);
+				}
+			}
+			pre_goto_flag = sharedMemory->tcs.cmd_go_flag;
+			
+			if (sharedMemory->tcs.cmd_stop_flag)
+			{
+				if (sharedMemory->tcs.cmd_stop_flag != pre_stop_flag)
+				{
+					if (TELESCOPE_MODE == TEL_MODE_PARK)
+					{
+						AxmHomeSetResult(0, HOME_SUCCESS); AxmHomeSetResult(1, HOME_SUCCESS);
+					}
+					STOP_TELESCOPE() ;	
+				}
+			}
+			pre_stop_flag = sharedMemory->tcs.cmd_stop_flag;    
+			
+			CmtReleaseLock(lock); 
+/*			
 			else if (control == PANEL_CONST_WEST)
 			{
 				STOP_TELESCOPE();
@@ -279,36 +494,17 @@ int CVICALLBACK APPLY (int panel, int control, int event,
 				go_const('B', -PARK_FREQ[1]);
 				SetCtrlVal(tel_handle, PANEL_TEXTBOX, "Go to the DOWN \n"); 
 			}
-			
+*/			
 		break ; 
 	}
 	
 	return 0;
 }
-/*
-int CVICALLBACK OpenLimit (int panel, int control, int event, 
-					   void *callbackData, int eventData1, int eventData2)
-{
-	switch (event)
-	{
-		case EVENT_COMMIT:
-			if(limit_handle>0) return 0;
-			if ((limit_handle = LoadPanel(0, "initiation.uir", PANEL2)) < 0) return -1;
 
-			DisplayPanel(limit_handle) ;
-			display_message("Limit Window is opend. \n") ;
-			
-			RunUserInterface() ;
-			DiscardPanel(limit_handle) ;
-			limit_handle = -1 ;			 // limit_handle을 비활성화 시키는 작업. THREAD_LIMIT_STATUS에서는 계속 단추값을 넣으려고 하는데 핸들은 이미 사라졌기 때문. 인위적으로 사라짐을 -1로 표시해 주어야 함.
-			
-			break ;
-	}
-	return 0 ;
-}
-*/
-/////////////////////////////////////////////////////////////////////
-int CVICALLBACK CB_TIMER(int panel, int control, int event, 
+/*---------------------------------------------------------------------------*/
+/* Callback Function of CB_TIMER											 */
+/*---------------------------------------------------------------------------*/
+int CVICALLBACK TRACKING_TIMER(int panel, int control, int event, 
 					   void *callbackData, int eventData1, int eventData2)
 {
 //	int is_track=0;

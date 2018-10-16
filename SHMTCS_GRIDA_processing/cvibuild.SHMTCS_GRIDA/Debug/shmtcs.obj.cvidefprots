@@ -6,13 +6,29 @@ Prototype="int main(int argc, char **argv);"
 Class="Function"
 Prototype="int Panel_Proc(int panel, int event, void *callbackData, int eventData1, int eventData2);"
 
-[APPLY]
+[SetupServerOrClient]
 Class="Function"
-Prototype="int APPLY(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+Prototype="int SetupServerOrClient();"
 
-[CB_TIMER]
+[CleanupServerOrClient]
 Class="Function"
-Prototype="int CB_TIMER(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+Prototype="int CleanupServerOrClient();"
+
+[CreateOrOpenMapFile]
+Class="Function"
+Prototype="struct sharedMemTypeRec *CreateOrOpenMapFile(HANDLE *hMemMapFile, char *mapName, int create, int size, int *alreadyExist);"
+
+[CloseMapping]
+Class="Function"
+Prototype="int CloseMapping(HANDLE *hMemMapFile, void **memPtr);"
+
+[APPLY_TIMER]
+Class="Function"
+Prototype="int APPLY_TIMER(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[TRACKING_TIMER]
+Class="Function"
+Prototype="int TRACKING_TIMER(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
 
 [THREAD_INIT]
 Class="Function"
