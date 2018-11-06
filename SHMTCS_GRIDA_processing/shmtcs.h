@@ -54,8 +54,8 @@
 #define  PANEL_OFF_AZI                    38      /* control type: numeric, callback function: (none) */
 #define  PANEL_ALT                        39      /* control type: textMsg, callback function: (none) */
 #define  PANEL_OFF_RA                     40      /* control type: numeric, callback function: (none) */
-#define  PANEL_APPLY_TIMER                41      /* control type: timer, callback function: APPLY_TIMER */
-#define  PANEL_TRACKING_TIMER             42      /* control type: timer, callback function: TRACKING_TIMER */
+#define  PANEL_TRACKING_TIMER             41      /* control type: timer, callback function: TRACKING_TIMER */
+#define  PANEL_APPLY_TIMER                42      /* control type: timer, callback function: APPLY_TIMER */
 
 
      /* Control Arrays: */

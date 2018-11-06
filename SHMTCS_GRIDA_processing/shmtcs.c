@@ -124,6 +124,11 @@ static int IS_TRACK=0;
 float off_ra=0., off_dec=0., off_azi=0., off_alt=0.;
 static char buffer[200] ;
 char GBUFF[500] ;
+	int pre_park_flag = 0;
+	int pre_init_flag = 0;
+	int pre_stop_flag = 0;
+	int pre_goto_flag = 0;
+	int pre_tcsinit_flag = 0;
 
 /*---------------------------------------------------------------------------*/
 /*  Internal functions prototypes for TCS                                    */
@@ -393,67 +398,61 @@ int CloseMapping(HANDLE *hMemMapFile, void **memPtr)
 int CVICALLBACK APPLY_TIMER (int panel, int control, int event, 
 					   void *callbackData, int eventData1, int eventData2)
 {
-	int pre_park_flag = 0;
-	int pre_init_flag = 0;
-	int pre_stop_flag = 0;
-	int pre_goto_flag = 0;
-	int pre_tcsinit_flag = 0;
 	
 	switch (event) {
 		case EVENT_TIMER_TICK:
 			
 			if (!sharedMemory) return 0 ;
+			
+			display_tel_status();  
 	
 			CmtGetLock(lock);
            	
-			if (sharedMemory->tcs.cmd_park_flag)
+			if (sharedMemory->tcs.cmd_park_flag != pre_park_flag)
 			{																				
-				if (sharedMemory->tcs.cmd_park_flag != pre_park_flag)
+				if (sharedMemory->tcs.cmd_park_flag)
 				{
 					start_parking();
 				}
 			}
 			pre_park_flag = sharedMemory->tcs.cmd_park_flag;
 			
-			if (sharedMemory->tcs.cmd_tcsinit_flag)
+			if (sharedMemory->tcs.cmd_tcsinit_flag != pre_tcsinit_flag)
 			{
-				if (sharedMemory->tcs.cmd_tcsinit_flag != pre_tcsinit_flag)
+				if (sharedMemory->tcs.cmd_tcsinit_flag)
 				{
 					start_inittcs();
 				}
 			}
 			pre_tcsinit_flag = sharedMemory->tcs.cmd_tcsinit_flag;
 			
-			if (sharedMemory->tcs.cmd_init_flag)
+			if (sharedMemory->tcs.cmd_init_flag != pre_init_flag)
 			{
-				if (sharedMemory->tcs.cmd_init_flag != pre_init_flag)
+				if (sharedMemory->tcs.cmd_init_flag)
 				{
 					start_init();
 				}
 			}
 			pre_init_flag = sharedMemory->tcs.cmd_init_flag;
 			
-			if (sharedMemory->tcs.cmd_go_flag)
+			if (sharedMemory->tcs.cmd_go_flag != pre_goto_flag)
 			{
-				if (sharedMemory->tcs.cmd_go_flag != pre_goto_flag)
+				if (sharedMemory->tcs.cmd_go_flag)
 				{
 					turn_on_timer(tel_handle, PANEL_TRACKING_TIMER);
 					set_timer_interval(tel_handle, PANEL_TRACKING_TIMER, SERVO_UPDATE_SEC);
 					goto_target();
 				}
-			}
-			else
-			{
-				if (sharedMemory->tcs.cmd_go_flag != pre_goto_flag)
+				else
 				{
 					turn_off_timer(tel_handle, PANEL_TRACKING_TIMER);
 				}
 			}
 			pre_goto_flag = sharedMemory->tcs.cmd_go_flag;
 			
-			if (sharedMemory->tcs.cmd_stop_flag)
+			if (sharedMemory->tcs.cmd_stop_flag != pre_stop_flag)
 			{
-				if (sharedMemory->tcs.cmd_stop_flag != pre_stop_flag)
+				if (sharedMemory->tcs.cmd_stop_flag)
 				{
 					if (TELESCOPE_MODE == TEL_MODE_PARK)
 					{
@@ -558,8 +557,7 @@ int CVICALLBACK TRACKING_TIMER(int panel, int control, int event,
 			 }
 			 
 //			 Delay(0.05);
-			
-			 display_tel_status();
+		
 			
 		 break ; 
 	}
@@ -707,15 +705,26 @@ void display_message2(char buff[])
 int goto_target()
 /////////////////////////////////////////////////////////////////////
 {
-char buff[300];
-h_m_s ra;
-d_m_s dec;
+	char buff[300]={0.};
+	h_m_s ra;
+	d_m_s dec;
+
+    CmtGetLock(lock);
+	ra.h = sharedMemory->tcs.cmd_x_h;
+	ra.m = sharedMemory->tcs.cmd_x_m;
+	ra.s = sharedMemory->tcs.cmd_x_s;
+	dec.d = sharedMemory->tcs.cmd_y_d;
+	dec.m = sharedMemory->tcs.cmd_y_m;
+	dec.s = sharedMemory->tcs.cmd_y_s;
+	CmtReleaseLock(lock);
 	
-	GetCtrlVal(tel_handle, PANEL_RA_INPUT, buff);
+//	GetCtrlVal(tel_handle, PANEL_RA_INPUT, buff);
 	sscanf(buff, "%d %d %lf", &ra.h, &ra.m, &ra.s);
+	SetCtrlVal(tel_handle, PANEL_RA_INPUT, buff);
 	
-	GetCtrlVal(tel_handle, PANEL_DEC_INPUT, buff);
+//	GetCtrlVal(tel_handle, PANEL_DEC_INPUT, buff);
 	sscanf(buff, "%d %d %lf", &dec.d, &dec.m, &dec.s);
+	SetCtrlVal(tel_handle, PANEL_DEC_INPUT, buff);
 	
 	hms_to_rad(&ra);
 	if(dec.d > 0) dms_to_rad(&dec);
